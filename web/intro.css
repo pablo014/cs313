@@ -1,3 +1,7 @@
 footer {
        background-color: lightblue;
 }
+
+.nav {
+     background-image: linear-gradient(lightblue, grey);
+}
