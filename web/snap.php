@@ -1,3 +1,1 @@
-<?php
-	echo "<p>Hello<p>;";
-?>
+<?php echo '<p>Contact Information:<br>Phone: (904) 662-4380<br>Email: pab18001@byui.edu</p>';?>
