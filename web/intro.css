@@ -9,7 +9,7 @@ footer {
 .head {
       display: flex;
       font-size: 50px;
-      font-style: bold;
-      font-color: white;
+      font-weight: bold;
+      color: white;
       background-color: black;
 }
