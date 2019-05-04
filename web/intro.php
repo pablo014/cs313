@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="intro.css">
   </head>
   <body>
+    <img src="https://i.pinimg.com/736x/15/b1/25/15b12565eb23e2804cccf0b0ed4b299e--pokemon-go-mystic.jpg" alt="Cool logo">
     <h1>Angelo Pablo</h1><br>
     <div class="nav">
       <a href="intro.html">Home</a>&nbsp; &nbsp;
       <a href="assignments.html">Assignments</a> &nbsp; &nbsp; 
       <a href="pun.html">My Puns</a> &nbsp; &nbsp;
       <a href="https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)">A Link</a>
-      <a href="snap.php">Test</a>
     </div>
     <br>
     <h2>About Me</h2><br>
@@ -20,7 +20,6 @@
       <p>
 	Hello! My name is Angelo Pablo. This Is currently my fourth semester in BYU-I. I am studying Software Engineering as a major and I am studying Chinese for fun. I enjoy running and swimming as it pertains to sports. My favorite thing to do is make puns and do magic tricks, but yeah that is my life.
       </p>
-      <button type="button" onclick="snap.php">Snap!</button>
     </div>
     <br><br>
 
