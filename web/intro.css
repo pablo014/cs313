@@ -2,7 +2,7 @@ body {
      color: white;
      background-color: black;
 }
-footer {
+footer > p {
        background-color: lightblue;
        color: black;
        margin: 10px;
