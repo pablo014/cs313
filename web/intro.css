@@ -9,6 +9,14 @@ footer {
 
 .nav {
      background-image: linear-gradient(lightblue, grey);
+     display: flex;
+     flex-wrap: nowrap;
+}
+
+.nav > div {
+     width: 100px;
+     text-align: center;
+     margin: 10px;
 }
 
 .head {
