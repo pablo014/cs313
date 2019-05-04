@@ -10,4 +10,6 @@ footer {
       display: flex;
       font-size: 50px;
       font-style: bold;
+      font-color: white;
+      background-color: black;
 }
