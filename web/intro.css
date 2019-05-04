@@ -1,3 +1,7 @@
+body {
+     color: white;
+     background-color: black;
+}
 footer {
        background-color: lightblue;
 }
@@ -10,6 +14,4 @@ footer {
       display: flex;
       font-size: 50px;
       font-weight: bold;
-      color: white;
-      background-color: black;
 }
