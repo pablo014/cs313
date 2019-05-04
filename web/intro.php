@@ -4,7 +4,7 @@
     <title>Angelo Pablo Homepage</title>
     <link rel="stylesheet" href="intro.css">
     <style>
-      .class {
+      .selected {
       background-image: linear-gradient(lightblue, grey);
       }
   </head>
