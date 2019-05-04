@@ -3,12 +3,12 @@ body {
      background-color: black;
 }
 footer {
-       background-color: lightblue;
+       background-color: dodgerblue;
        color: black;
 }
 
 .nav {
-     background-image: linear-gradient(lightblue, grey);
+     background-image: linear-gradient(dodgerblue, grey);
      display: flex;
      flex-wrap: nowrap;
 }
