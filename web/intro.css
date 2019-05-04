@@ -5,3 +5,7 @@ footer {
 .nav {
      background-image: linear-gradient(lightblue, grey);
 }
+
+.head {
+      display: flex;
+}
