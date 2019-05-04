@@ -15,6 +15,7 @@
     <div class="head">
       <script>
 	function change() {
+	alert("Inside the function");
 	document.getElementById.innerHTML = "<div style=green><p>It's Green Now</p></div>";
 	}
       </script>
