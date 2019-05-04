@@ -18,7 +18,7 @@
 	document.getElementById("header").innerHTML = "<p color=green>Poof Magic!</p>";
 	}
       </script>
-      <img src="https://i.pinimg.com/736x/15/b1/25/15b12565eb23e2804cccf0b0ed4b299e--pokemon-go-mystic.jpg" alt="Cool logo" height="150" width="125"><p id="header" onclick="change()">Angelo Pablo's Home Page</p>
+      <img src="https://i.pinimg.com/736x/15/b1/25/15b12565eb23e2804cccf0b0ed4b299e--pokemon-go-mystic.jpg" alt="Cool logo" height="150" width="125"><p id="header" onmouseover="change()">Angelo Pablo's Home Page</p>
     </div>
     <div class="nav">
       <div class="selected"><a href="intro.html">Home</a></div>
