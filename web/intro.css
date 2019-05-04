@@ -2,10 +2,9 @@ body {
      color: white;
      background-color: black;
 }
-footer > p {
+footer {
        background-color: lightblue;
        color: black;
-       margin: 10px;
 }
 
 .nav {
