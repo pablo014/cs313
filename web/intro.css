@@ -5,6 +5,7 @@ body {
 footer {
        background-color: lightblue;
        color: black;
+       margin: 10px;
 }
 
 .nav {
