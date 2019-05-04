@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="intro.css">
     <style>
         .selected {
-      background-image: linear-gradient(lightblue, grey);
+	background-image: linear-gradient(lightblue, grey);
+	margin-top: 0px;
+	margin-bottom: 0px;
       }
     </style>
   </head>
