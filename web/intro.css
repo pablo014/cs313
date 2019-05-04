@@ -1,16 +1,13 @@
 body {
      color: white;
      background-color: black;
-     text-align: center;
 }
 footer {
        background-color: lightblue;
-       text-align: left;
 }
 
 .nav {
      background-image: linear-gradient(lightblue, grey);
-     text-align: left;
 }
 
 .head {
@@ -22,4 +19,5 @@ footer {
 .body {
       width: 50%;
       text-align: center;
+      margin: auto;
 }
