@@ -4,9 +4,10 @@
     <title>Angelo Pablo Homepage</title>
     <link rel="stylesheet" href="intro.css">
     <style>
-      .selected {
+        .selected {
       background-image: linear-gradient(lightblue, grey);
       }
+    </style>
   </head>
   <body>
     <div class="head">
