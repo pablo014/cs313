@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Title Page</title>
+  </head>
+  <body>
+    <h1>Team Project 1</h1><br><br>
+
+    <div id="1">
+      <p>This is a random piece of text that will go bold when you hover over it</p>
+    </div><br><br>
+
+    <div id="2">
+      <p>This is a random piece of text that will go bold when you hover over it</p>
+    </div><br><br>
+
+    <div id="3">
+      <p>This is a random piece of text that will go bold when you hover over it</p>
+    </div><br><br>
+
+    <button type="button">Click Me</button>
+  </body>
