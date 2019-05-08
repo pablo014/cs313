@@ -25,7 +25,7 @@
     <h1>Team Assignments</h1>
     <a href="team1.html">Team Assignment Week 2</a><br>
     <a href="forms.php">Team Assignment Week 3</a><br>
-    <h1>Team Assignments</h1>
+    <h1>Individual Assignments</h1>
     <a href="intro.php">Prove 02</a><br>
     <a href="">Prove 03</a><br>
   </body>
