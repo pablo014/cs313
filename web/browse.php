@@ -39,7 +39,7 @@
         </tr>
 	<tr>
 	  <td>Total:</td>
-	  <td id="total">$0.00</td>
+	  <td id="total"><input type="textbox" name="total" value="$0.00" readonly></td>
 	</tr>
       </table>
       <br><br>
