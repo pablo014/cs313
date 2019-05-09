@@ -41,7 +41,7 @@
 	  </td>
 	  <td>$40.00</td>
 	  </script>
-	  <td><input type="checkbox" name="plastic" value="Single Basket (Plastic): $40<br>" onclick=""></td>
+	  <td><input type="checkbox" name="plastic" value="Single Basket (Plastic): $40<br>" onclick="changePlastic()"></td>
 	</tr>
 	<tr>
           <td>
