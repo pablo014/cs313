@@ -4,6 +4,6 @@
     <title>Shopping Cart</title>
   </head>
   <body>
-    <?php echo "$_GET[Plastic]">
+    <p><?php echo "$_GET[Plastic]"><p>
   </body>
 </html>
