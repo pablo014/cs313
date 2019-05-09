@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Shopping Cart</title>
+    <title>Shopping Cart Central</title>
+    <link rel="stylesheet" href="style1.css">
   </head>
   <body>
     <h1>Shopping Carts</h1>
@@ -27,6 +28,10 @@
           <td>$50.00</td>
           <td><input type="checkbox" name="Double" value="50"></td>
         </tr>
+	<tr>
+	  <td>Total:</td>
+	  <td></td>
+	</tr>
       </table>
       <br><br>
         <button type="submit">View Cart</button><br><br>
