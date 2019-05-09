@@ -20,7 +20,34 @@
             plastic = false;
             total = total - 40;
          }
-         alert(total);
+         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
+      }
+
+      function changeMetal() {
+         if (metal == false)
+         {
+            metal = true;
+            total = total + 60;
+         }
+         else
+         {
+            metal = false;
+            total = total - 60;
+         }
+         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
+      }
+      
+      function changeDouble() {
+         if (double == false)
+         {
+            double = true;
+            total = total + 50;
+         }
+         else
+         {
+            double = false;
+            total = total - 50;
+         }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
     </script>
