@@ -4,6 +4,6 @@
     <title>View Cart</title>
   </head>
   <body>
-    <?php echo "hello"?>
+    <?php echo "$_GET[plastic]"?>
   </body>
 </html>
