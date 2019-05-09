@@ -16,7 +16,7 @@
       var total = 0;
       
       function changePlastic() {
-         if (<?php $plastic?> == false)
+         if (<?php echo $plastic ?> == false)
          {
             alert("Inside the if statement");
             plastic = true;
