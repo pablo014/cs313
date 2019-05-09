@@ -14,23 +14,32 @@
 	  <th></th>
 	</tr>
 	<tr>
-	  <td>Single Basket (Plastic)</td>
+	  <td>
+	    Single Basket (Plastic)<br>
+	    <img src="" alt="" height="" width="">
+	  </td>
 	  <td>$40.00</td>
 	  <td><input type="checkbox" name="Plastic" value="40"></td>
 	</tr>
 	<tr>
-          <td>Single Basket (Metal)</td>
+          <td>
+	    Single Basket (Metal)<br>
+	    <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjY_7n9ro_iAhVrilQKHb5cD1UQjRx6BAgBEAU&url=https%3A%2F%2Fwww.specialtystoreservices.com%2Fproductdetails.aspx%3Fproductid%3D11074%26group%3D%26img%3D9005.jpg%26category%3D4167&psig=AOvVaw30w61QEwyjNa3fPD5c4nRQ&ust=1557521854431762" alt="Single Metal Basket" height="150" width="150">
+	  </td>
           <td>$60.00</td>
           <td><input type="checkbox" name="Metal" value="60"></td>
         </tr>
 	<tr>
-          <td>Double Basket</td>
+          <td>
+	    Double Basket<br>
+	    <img src="" alt="" height="" width="">
+	  </td>
           <td>$50.00</td>
           <td><input type="checkbox" name="Double" value="50"></td>
         </tr>
 	<tr>
 	  <td>Total:</td>
-	  <td></td>
+	  <td id="total">$0.00</td>
 	</tr>
       </table>
       <br><br>
