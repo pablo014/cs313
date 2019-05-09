@@ -10,12 +10,16 @@
       $double = false;
       $total = 0;
 	 ?>
+      var plastic = false;
+      var metal = false;
+      var double = false;
+      var total = 0;
       
       function changePlastic() {
          if (<?php echo $plastic> == false)
          {
-            $plastic = true;
-            $total = $total + 40;
+            plastic = true;
+            total = total + 40;
          }
          else
          {
