@@ -27,10 +27,10 @@
           <td></td>
           <td></td>
         </tr>
-	<br><br>
-	<button type="submit">View Cart</button><br><br>
-	<input type="button" value="submit" onclick="confirm.php">
       </table>
+      <br><br>
+        <button type="submit">View Cart</button><br><br>
+        <input type="button" value="Check Out" onclick="confirm.php">
     </form>
   </body>
 </html>
