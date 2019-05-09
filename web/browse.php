@@ -3,6 +3,26 @@
   <head>
     <title>Shopping Cart Central</title>
     <link rel="stylesheet" href="style1.css">
+    <script>
+      var plastic = false;
+      var metal = false;
+      var double = false;
+      var total = 0;
+      
+      function changePlastic() {
+         if (plastic == false)
+         {
+            plastic = true;
+            total = total + 40;
+         }
+         else
+         {
+            plastic = false;
+            total = total - 40;
+         }
+         document.getElementById(total).innerHTML = "<input type=textbox name=total value=$" + total + "readonly>"
+      }
+    </script>
   </head>
   <body>
     <h1>Shopping Carts</h1>
@@ -19,7 +39,8 @@
 	    <img src="https://cdna4.zoeysite.com/Adzpo594RQGDpLcjBynL1z/cache=expiry:31536000/resize=fit:max,width:1200//compress/https://s3.amazonaws.com/zcom-media/sites/a0i0L00000TM7fPQAT/media/catalog/product/1/0/103-172-red-45-degree-view.jpg" alt="Single Plastic Basket" height="150" width="150">
 	  </td>
 	  <td>$40.00</td>
-	  <td><input type="checkbox" name="plastic" value="Single Basket (Plastic): $40<br>"></td>
+	  </script>
+	  <td><input type="checkbox" name="plastic" value="Single Basket (Plastic): $40<br>" onclick=""></td>
 	</tr>
 	<tr>
           <td>
@@ -27,7 +48,7 @@
 	    <img src="https://images.uline.com/is/image/content/dam/images/H/H5000/H-4568.jpg?$MediumRHD$&iccEmbed=1&icc=AdobeRGB" alt="Single Metal Basket" height="150" width="150">
 	  </td>
           <td>$60.00</td>
-          <td><input type="checkbox" name="metal" value="Single Basket (Metal): $60<br>"></td>
+          <td><input type="checkbox" name="metal" value="Single Basket (Metal): $60<br>" onclick=""></td>
         </tr>
 	<tr>
           <td>
@@ -35,7 +56,7 @@
 	    <img src="https://dijf55il5e0d1.cloudfront.net/images/na/3/8/7/38701_1000.jpg" alt="Double Basket" height="150" width="150">
 	  </td>
           <td>$50.00</td>
-          <td><input type="checkbox" name="double" value="Double Basket: $50<br>"></td>
+          <td><input type="checkbox" name="double" value="Double Basket: $50<br>" onclick=""></td>
         </tr>
 	<tr>
 	  <td>Total:</td>
