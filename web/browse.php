@@ -20,6 +20,7 @@
             plastic = false;
             total = total - 40;
          }
+         alert(total);
          document.getElementById(total).innerHTML = "<input type='textbox' name='total' value='$" + total + "'readonly>"
       }
     </script>
