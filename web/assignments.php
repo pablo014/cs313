@@ -27,6 +27,6 @@
     <a href="forms.php">Team Assignment Week 3</a><br>
     <h1>Individual Assignments</h1>
     <a href="intro.php">Prove 02</a><br>
-    <a href="">Prove 03</a><br>
+    <a href="browse.php">Prove 03</a><br>
   </body>
 </html>
