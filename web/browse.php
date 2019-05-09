@@ -4,16 +4,18 @@
     <title>Shopping Cart Central</title>
     <link rel="stylesheet" href="style1.css">
     <script>
-      var plastic = false;
-      var metal = false;
-      var double = false;
-      var total = 0;
+      <?php
+      $plastic = false;
+      $metal = false;
+      $double = false;
+      $total = 0;
+	 ?>
       
       function changePlastic() {
-         if (plastic == false)
+         if (<?php echo $plastic> == false)
          {
-            plastic = true;
-            total = total + 40;
+            $plastic = true;
+            $total = $total + 40;
          }
          else
          {
