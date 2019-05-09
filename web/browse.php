@@ -16,7 +16,7 @@
       var total = 0;
       
       function changePlastic() {
-         if (<?php echo $plastic> == false)
+         if (plastic == false)
          {
             plastic = true;
             total = total + 40;
