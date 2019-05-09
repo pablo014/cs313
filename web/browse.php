@@ -4,7 +4,7 @@
     <title>Shopping Cart</title>
   </head>
   <body>
-    <h1>Shopping Cart</h1>
+    <h1>Shopping Carts</h1>
     <form action="view.php" method="get">
       <table>
 	<tr>
@@ -13,19 +13,19 @@
 	  <th></th>
 	</tr>
 	<tr>
-	  <td></td>
-	  <td></td>
-	  <td></td>
+	  <td>Single Basket (Plastic)</td>
+	  <td>$40.00</td>
+	  <td><input type="checkbox" name="Plastic" value="40"></td>
 	</tr>
 	<tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Single Basket (Metal)</td>
+          <td>$60.00</td>
+          <td><input type="checkbox" name="Metal" value="60"></td>
         </tr>
 	<tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Double Basket</td>
+          <td>$50.00</td>
+          <td><input type="checkbox" name="Double" value="50"></td>
         </tr>
       </table>
       <br><br>
