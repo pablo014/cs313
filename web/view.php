@@ -4,6 +4,6 @@
     <title>View Cart</title>
   </head>
   <body>
-    <?php echo "$_GET[plastic] $_GET[metal] $_GET[double] $_GET[total]"?>
+    <?php echo "$_GET[plastic] $_GET[metal] $_GET[double] Total: $_GET[total]"?>
   </body>
 </html>
