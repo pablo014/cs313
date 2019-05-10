@@ -4,9 +4,9 @@
     <title>Shopping Cart Central</title>
     <link rel="stylesheet" href="style1.css">
     <script>
-      var plastic = false;
-      var metal = false;
-      var double = false;
+      var plastic = <?php if(isset($_POST[plastic])) { echo "true"; } else { echo "false"; } ?>;
+      var metal = <?php if(isset($_POST[metal])) { echo "true"; } else { echo "false"; } ?>;
+      var double = <?php if(isset($_POST[double])) { echo "true"; } else { echo "false"; } ?>;
       var total = <?php
          if(isset($_POST[plastic]))
          {
@@ -76,7 +76,7 @@
 
       function load() {
         alert("Inside load");
-        alert(total);
+        alert(total + " " + plastic + " " + metal + " " + double);
         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>";
       }
     </script>
