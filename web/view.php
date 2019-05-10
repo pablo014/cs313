@@ -19,7 +19,7 @@
          echo "<input type=checkbox value=50 name=double>"."Double Basket: $"."$_GET[double]"."<br>";
 	 }
 	 
-	 echo "Total: $"."$_GET[total]";
+	 echo "Total: "."$_GET[total]";
 	 ?>
       <br><br>
       <button type="submit">Return</button>
