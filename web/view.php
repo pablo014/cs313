@@ -15,7 +15,7 @@
     </script>
   </head>
   <body>
-    <p><?php echo "Hello"; ?></p>
+    <?php echo "Hello"; ?>
     <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]))
