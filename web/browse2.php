@@ -15,6 +15,10 @@
             {
             echo " + ";
             }
+            else
+            {
+            echo " + 0";
+            }
          }
          else
          {
@@ -27,6 +31,10 @@
 	    {
 	    echo " + ";
 	    }
+            else
+            {
+            echo "+ 0";
+            }
          }
 	 else
 	 {
