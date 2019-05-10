@@ -10,7 +10,7 @@
       var total = <?php
          if(isset($_POST[plastic]))
          {
-         echo "intval($_POST[plastic])";
+         echo "parseInt($_POST[plastic], 10)";
 	    if(isset($_POSt[metal]) || isset($_POST[double]))
             {
             echo " + ";
@@ -18,7 +18,7 @@
          }
          if(isset($_POST[metal]))
          {
-         echo "intval($_POST[metal])";
+         echo "parseInt($_POST[metal], 10)";
 	    if(isset($_POST[double]))
 	    {
 	    echo " + ";
@@ -26,7 +26,7 @@
          }
          if(isset($_POST[double]))
          {
-         echo "intval($_POST[double])";
+         echo "parseInt($_POST[double], 10)";
          }
 
          ?>;
