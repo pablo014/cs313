@@ -8,25 +8,25 @@
       var metal = false;
       var double = false;
       var total = <?php
-         if(isset($_GET[plastic]))
+         if(isset($_POST[plastic]))
          {
-         echo "$_GET[plastic]";
-	    if(isset($_GET[metal]) || isset($_GET[double]))
+         echo "$_POST[plastic]";
+	    if(isset($_POSt[metal]) || isset($_POST[double]))
             {
             echo " + ";
             }
          }
-         if(isset($_GET[metal]))
+         if(isset($_POST[metal]))
          {
-         echo "$_GET[metal]";
-	    if(isset($_GET[double]))
+         echo "$_POSt[metal]";
+	    if(isset($_POST[double]))
 	    {
 	    echo " + ";
 	    }
          }
-         if(isset($_GET[double]))
+         if(isset($_POST[double]))
          {
-         echo "$_GET[double]";
+         echo "$_POST[double]";
          }
 
          ?>;
