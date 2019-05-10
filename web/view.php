@@ -22,7 +22,7 @@
 	 echo "Total: "."$_GET[total]";
 	 ?>
       <br><br>
-      <button type="submit">Return</button><br>
+      <button type="submit">Return</button><br><br>
       <input type="button" value="Check Out" onclick="confirm.php">
     </form>
   </body>
