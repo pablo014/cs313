@@ -24,6 +24,6 @@
       <br><br>
       <button type="submit">Return</button><br><br>
     </form>
-    <button href="confirm.php">Check Out</button>
+    <input type="button" onclick="loaction.href='confirm.php'" value="Check Out">
   </body>
 </html>
