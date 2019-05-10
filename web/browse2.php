@@ -97,8 +97,6 @@
       }
 
       function load() {
-        alert("Inside load");
-        alert(total + " " + plastic + " " + metal + " " + double);
         if (plastic == true)
         {
            document.getElementById("plastic").innerHTML = "<input type=checkbox name=plastic value=40 onclick=changePlastic() checked>";
