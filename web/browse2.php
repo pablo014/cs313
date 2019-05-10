@@ -154,7 +154,7 @@
       </table>
       <br><br>
         <button type="submit">View Cart</button><br><br>
-        <input type="button" value="Check Out" onclick="confirm.php">
+	<a href="confirm.php"><input type="button" value="Check Out"></a>
     </form>
   </body>
 </html>
