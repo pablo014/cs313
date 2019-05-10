@@ -23,7 +23,7 @@
 	 ?>
       <br><br>
       <button type="submit">Return</button><br><br>
-      <input type="button" value="Check Out" onclick="confirm.php">
     </form>
+    <input type="button" value="Check Out" onclick="confirm.php">
   </body>
 </html>
