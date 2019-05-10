@@ -77,6 +77,18 @@
       function load() {
         alert("Inside load");
         alert(total + " " + plastic + " " + metal + " " + double);
+        if (plastic == "true")
+        {
+           document.getElementById("plastic").innerHTML = "<input type=checkbox name=plastic value=50 onclick=changePlastic()";
+        }
+        if (metal == "true")
+        {
+           document.getElementById("metal").innerHTML = "<input type=checkbox name=metal value=50 onclick=changeMetal()";
+        }
+        if (double == "true")
+        {
+           document.getElementById("double").innerHTML = "<input type=checkbox name=double value=50 onclick=changeDouble()";
+        }
         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>";
       }
     </script>
@@ -97,7 +109,7 @@
 	  </td>
 	  <td>$40.00</td>
 	  </script>
-	  <td><input type="checkbox" name="plastic" value="40" onclick="changePlastic()"></td>
+	  <td id="plastic"><input type="checkbox" name="plastic" value="40" onclick="changePlastic()"></td>
 	</tr>
 	<tr>
           <td>
@@ -105,7 +117,7 @@
 	    <img src="https://images.uline.com/is/image/content/dam/images/H/H5000/H-4568.jpg?$MediumRHD$&iccEmbed=1&icc=AdobeRGB" alt="Single Metal Basket" height="150" width="150">
 	  </td>
           <td>$60.00</td>
-          <td><input type="checkbox" name="metal" value="60" onclick="changeMetal()"></td>
+          <td id="metal"><input type="checkbox" name="metal" value="60" onclick="changeMetal()"></td>
         </tr>
 	<tr>
           <td>
@@ -113,7 +125,7 @@
 	    <img src="https://dijf55il5e0d1.cloudfront.net/images/na/3/8/7/38701_1000.jpg" alt="Double Basket" height="150" width="150">
 	  </td>
           <td>$50.00</td>
-          <td><input type="checkbox" name="double" value="50" onclick="changeDouble()"></td>
+          <td id="double"><input type="checkbox" name="double" value="50" onclick="changeDouble()"></td>
         </tr>
 	<tr>
 	  <td>Total:</td>
