@@ -11,6 +11,7 @@
          if(isset($_POST[plastic]))
          {
          echo "$_POST[plastic]";
+         $plastic = $_POST[plastic];
 	    if(isset($_POST[metal]) || isset($_POST[double]))
             {
             echo " + ";
@@ -22,10 +23,12 @@
          }
          else
          {
+         $plastic = 0;
          echo "0 + ";
          }
          if(isset($_POST[metal]))
          {
+         $metal = $_POST[metal];
          echo "$_POST[metal]";
 	    if(isset($_POST[double]))
 	    {
@@ -37,6 +40,7 @@
             }
          }
          else {
+            $metal = 0;
             echo "0";
             if(isset($_POST[double]))
             {
@@ -45,11 +49,14 @@
 	 }
          if(isset($_POST[double]))
          {
+         $double = $_POST[double];
          echo "$_POST[double]";
          }
          else {
+         $double = 0;
          echo "0";
          }
+         $total = $plastic + $metal + $double;
 
          ?>;
 
@@ -59,11 +66,19 @@
          {
             plastic = true;
             total = total + 40;
+            <?php
+	       $total = $total + 40;
+	       $isplastic = true;
+	       ?>
          }
          else
          {
             plastic = false;
             total = total - 40;
+	    <?php
+	       $total = $total - 40;
+	       $isplastic = false;
+               ?>
          }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
@@ -73,11 +88,19 @@
          {
             metal = true;
             total = total + 60;
+	    <?php
+               $total = $total + 60;
+               $ismetal = true;
+               ?>
          }
          else
          {
             metal = false;
             total = total - 60;
+	    <?php
+               $total = $total - 60;
+               $ismetal = false;
+               ?>
          }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
@@ -87,11 +110,19 @@
          {
             double = true;
             total = total + 50;
+	    <?php
+               $total = $total + 50;
+               $isdouble = true;
+               ?>
          }
          else
          {
             double = false;
             total = total - 50;
+	    <?php
+               $total = $total - 50;
+               $ismetal = false;
+               ?>
          }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
