@@ -4,7 +4,7 @@
     <title>View Cart</title>
   </head>
   <body>
-    <form action="browse.php" method="post">
+    <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]))
 	 {
