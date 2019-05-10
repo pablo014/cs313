@@ -7,7 +7,7 @@
       var plastic = false;
       var metal = false;
       var double = false;
-      var total = <?php $_POST[plastic] + $_POST[metal] + $_POST[double]; ?>;
+      var total = <?php echo "$_POST[plastic] + $_POST[metal] + $_POST[double]"; ?>;
       
       function changePlastic() {
          if (plastic == false)
