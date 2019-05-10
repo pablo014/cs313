@@ -56,9 +56,9 @@
       }
     </script>
   </head>
-  <body>
+  <body onload="myFunction()">
     <h1>Shopping Carts</h1>
-    <form action="view.php" method="get" onload="myFunction()">
+    <form action="view.php" method="get">
       <table>
 	<tr>
 	  <th>Product</th>
