@@ -79,15 +79,15 @@
         alert(total + " " + plastic + " " + metal + " " + double);
         if (plastic == "true")
         {
-           document.getElementById("plastic").innerHTML = "<input type=checkbox name=plastic value=50 onclick=changePlastic()";
+           document.getElementById("plastic").innerHTML = "<input type=checkbox name=plastic value=50 onclick=changePlastic() checked>";
         }
         if (metal == "true")
         {
-           document.getElementById("metal").innerHTML = "<input type=checkbox name=metal value=50 onclick=changeMetal()";
+           document.getElementById("metal").innerHTML = "<input type=checkbox name=metal value=50 onclick=changeMetal() checked>";
         }
         if (double == "true")
         {
-           document.getElementById("double").innerHTML = "<input type=checkbox name=double value=50 onclick=changeDouble()";
+           document.getElementById("double").innerHTML = "<input type=checkbox name=double value=50 onclick=changeDouble() checked>";
         }
         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>";
       }
