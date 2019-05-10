@@ -22,7 +22,7 @@
          }
          else
          {
-            echo "0 + ";
+         echo "0 + ";
          }
          if(isset($_POST[metal]))
          {
@@ -36,13 +36,19 @@
             echo "+ 0";
             }
          }
-	 else
-	 {
-	    echo "0 + ";
+         else {
+            echo "0";
+            if(isset($_POST[double]))
+            {
+            echo " + ";
+            }
 	 }
          if(isset($_POST[double]))
          {
          echo "$_POST[double]";
+         }
+         else {
+         echo "0";
          }
 
          ?>;
