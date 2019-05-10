@@ -7,7 +7,30 @@
       var plastic = false;
       var metal = false;
       var double = false;
-      var total = <?php echo "$_POST[plastic] + $_POST[metal] + $_POST[double]"; ?>;
+      var total = <?php
+         if(isset($_GET[plastic]))
+         {
+         echo "$_GET[plastic]";
+	    if(isset($_GET[metal]) || isset($_GET[double]))
+            {
+            echo " + ";
+            }
+         }
+         if(isset($_GET[metal]))
+         {
+         echo "$_GET[metal]";
+	    if(isset($_GET[double]))
+	    {
+	    echo " + ";
+	    }
+         }
+         if(isset($_GET[double]))
+         {
+         echo "$_GET[double]";
+         }
+
+         ?>;
+
       
       function changePlastic() {
          if (plastic == false)
