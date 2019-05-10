@@ -36,10 +36,6 @@
          {
          echo "$_POST[double]";
          }
-         else
-         {
-            echo "0";
-	 }
 
          ?>;
 
