@@ -4,9 +4,9 @@
     <title>Shopping Cart Central</title>
     <link rel="stylesheet" href="style1.css">
     <script>
-      var plastic = <?php echo isset($_POST[plastic]); ?>;
-      var metal = <?php echo isset($_POST[metal]); ?>;
-      var double = <?php echo isset($_POST[double]); ?>;
+      var plastic = <?php echo "isset($_POST[plastic])"; ?>;
+      var metal = <?php echo "isset($_POST[metal])"; ?>;
+      var double = <?php echo "isset($_POST[double])"; ?>;
       var total = <?php
          if(isset($_POST[plastic]))
          {
