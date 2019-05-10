@@ -52,11 +52,11 @@
       }
 
       function load() {
-        alert("inside the load");
+        alert(total);
       }
     </script>
   </head>
-  <body>
+  <body onload="load()">
     <h1>Shopping Carts</h1>
     <form action="view.php" method="get">
       <table>
