@@ -10,7 +10,7 @@
       var total = <?php
          if(isset($_POST[plastic]))
          {
-         echo "Number($_POST[plastic], 10)";
+         echo "Number($_POST[plastic])";
 	    if(isset($_POSt[metal]) || isset($_POST[double]))
             {
             echo " + ";
@@ -18,7 +18,7 @@
          }
          if(isset($_POST[metal]))
          {
-         echo "Number($_POST[metal], 10)";
+         echo "Number($_POST[metal])";
 	    if(isset($_POST[double]))
 	    {
 	    echo " + ";
@@ -26,7 +26,7 @@
          }
          if(isset($_POST[double]))
          {
-         echo "Number($_POST[double], 10)";
+         echo "Number($_POST[double])";
          }
 
          ?>;
