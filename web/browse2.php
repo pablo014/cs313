@@ -20,7 +20,7 @@
             plastic = false;
             total = total - 40;
          }
-         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>";
+         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
 
       function changeMetal() {
@@ -34,7 +34,7 @@
             metal = false;
             total = total - 60;
          }
-         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>";
+         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
       
       function changeDouble() {
@@ -48,12 +48,12 @@
             double = false;
             total = total - 50;
          }
-         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>";
+         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
 
       function load() {
-        document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + to\
-tal + ".00 readonly>";
+        alert(total);
+        document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
     </script>
   </head>
