@@ -5,7 +5,7 @@
   </head>
   <body>
     <?php 
-       if(isset($_GET[plastic))
+       if(isset($_GET[plastic]))
        {
           echo "$_GET[plastic]"; 
        }
@@ -15,10 +15,10 @@
        }
        if(isset($_GET[double]))
        {
-          echo "$_GET[double]"
+          echo "$_GET[double]";
        }
 
-       echo "Total: $_GET[total]"
+       echo "Total: $_GET[total]";
        ?>
   </body>
 </html>
