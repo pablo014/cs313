@@ -18,7 +18,7 @@
          }
          if(isset($_POST[metal]))
          {
-         echo "$_POSt[metal]";
+         echo "$_POST[metal]";
 	    if(isset($_POST[double]))
 	    {
 	    echo " + ";
