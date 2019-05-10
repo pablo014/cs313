@@ -50,30 +50,11 @@
          }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
-      
-      function load() {
-         var isset = <?php isset("$_POST[plastic]"); ?>;
-         if (isset)
-         {
-            total = total + 40;
-         }
-         isset = <?php isset("$_POST[metal]"); ?>;
-         if (isset)
-         {
-            total = total + 60;
-         }
-         isset = <?php isset("$_POST[double]")?>
-         if (isset)
-         {
-            total = total + 50;
-         }
-         document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>";
-      }
     </script>
   </head>
   <body>
     <h1>Shopping Carts</h1>
-    <form action="view.php" method="get" onload="load()">
+    <form action="view.php" method="get">
       <table>
 	<tr>
 	  <th>Product</th>
