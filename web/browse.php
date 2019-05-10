@@ -4,21 +4,15 @@
     <title>Shopping Cart Central</title>
     <link rel="stylesheet" href="style1.css">
     <script>
-      <?php
-      $plastic = false;
-      $metal = false;
-      $double = false;
-      $total = 0;
-	 ?>
       var plastic = false;
       var metal = false;
       var double = false;
       var total = 0;
+      var test = 
       
       function changePlastic() {
-         if (<?php echo $plastic ?> == false)
+         if (plastic == false)
          {
-            alert("Inside the if statement");
             plastic = true;
             total = total + 40;
          }
@@ -56,6 +50,9 @@
             total = total - 50;
          }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
+      }
+      
+      function load() {
       }
     </script>
   </head>
@@ -95,7 +92,7 @@
         </tr>
 	<tr>
 	  <td>Total:</td>
-	  <td id="total"><input type="textbox" name="total" value="$0.00" readonly></td>
+	  <td id="total"><input type="textbox" name="total" value="$0.00" onload="load()" readonly></td>
 	</tr>
       </table>
       <br><br>
