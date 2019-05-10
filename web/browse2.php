@@ -53,7 +53,6 @@
 
       function load() {
         alert(total);
-        document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
     </script>
   </head>
