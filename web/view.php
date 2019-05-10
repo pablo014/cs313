@@ -15,7 +15,7 @@
     </script>
   </head>
   <body>
-    <?php echo $GLOBALS['total']; ?>
+    <p><?php echo "Hello ".$GLOBALS['total']; ?></p>
     <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]))
