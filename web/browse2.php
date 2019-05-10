@@ -75,6 +75,7 @@
       }
 
       function load() {
+        alert("Inside load");
         alert(total);
       }
     </script>
