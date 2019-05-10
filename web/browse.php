@@ -8,7 +8,6 @@
       var metal = false;
       var double = false;
       var total = 0;
-      var test = 
       
       function changePlastic() {
          if (plastic == false)
