@@ -50,11 +50,15 @@
          }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
+      
+      function load() {
+        alert("inside the load");
+      }
     </script>
   </head>
   <body>
     <h1>Shopping Carts</h1>
-    <form action="view.php" method="get">
+    <form action="view.php" method="get" onload="load()">
       <table>
 	<tr>
 	  <th>Product</th>
