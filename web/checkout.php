@@ -13,7 +13,7 @@
       <br><br>
       <button type="submit">Purchase</button>
     </form>
-    <br><br>
+    <br>
     <a href="view.php"><input type="button" value="Return To Cart"></a>
   </body>
 </html>
