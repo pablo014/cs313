@@ -38,7 +38,7 @@
 	 $double = 0;
          $_SESSION['double'] = 0;
          }
-	 $total = $double + $metal + $plastic;
+	 $total = $double + $metal + $plastic + 40;
 	 $_SESSION['total'] = $total;
 	 echo $_SESSION['total'];
          ?>;
