@@ -1,16 +1,15 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>View Cart</title>
-    <script>
-      function plastic() {
-
-
-      }
-      
-    </script>
   </head>
   <body>
+    <?php
+     $total = $_SESSION['total'] + 40;
+     echo $total;
+    ?>
+
     <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]))
