@@ -28,8 +28,8 @@
 	 }
 	 if(isset($_GET[double]) || isset($_SESSION['double']))
 	 {
-         echo "<input type=checkbox value=50 id=double name=double checked>"."Double Basket: $60<br>";
-	 $double = 60;
+         echo "<input type=checkbox value=50 id=double name=double checked>"."Double Basket: $50<br>";
+	 $double = 50;
 	 }
 	 else
 	 {
