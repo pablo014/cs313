@@ -5,10 +5,10 @@
     <title>View Cart</title>
   </head>
   <body>
-  <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
+  <?php echo $_SESSION['total']." ".$_SESSION['isplastic']." ".$_SESSION['ismetal']." ".$_SESSION['isdouble']; ?>
     <form action="browse2.php" method="post">
       <?php 
-	 if(isset($_GET[plastic]) || $_SESSION['isplastic'])
+	 if(isset($_GET[plastic]) || $_SESSION['isplastic'] == true)
 	 {
             echo "<input type=checkbox value=40 id=plastic name=plastic onclick=plastic() checked>"."Single Basket (Plastic): $40<br>";
 	    $plastic = 40;
@@ -17,7 +17,7 @@
 	 {
 	    $plastic = 0;
 	 }
-	 if(isset($_GET[metal]) || $_SESSION['ismetal'])
+	 if(isset($_GET[metal]) || $_SESSION['ismetal'] == true)
 	 {
          echo "<input type=checkbox value=60 id=metal name=metal checked>"."Single Basket (Metal): $60<br>";
 	 $metal = 60;
@@ -26,7 +26,7 @@
 	 {
 	 $metal = 0;
 	 }
-	 if(isset($_GET[double]) || $_SESSION['isdouble'])
+	 if(isset($_GET[double]) || $_SESSION['isdouble'] == true)
 	 {
          echo "<input type=checkbox value=50 id=double name=double checked>"."Double Basket: $50<br>";
 	 $double = 50;
