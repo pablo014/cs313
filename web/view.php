@@ -5,7 +5,7 @@
     <title>View Cart</title>
   </head>
   <body>
-  <?php echo $_SESSION['total']." ".$_SESSION['isplastic']." ".$_SESSION['ismetal']." ".$_SESSION['isdouble']; ?>
+  <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
     <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]) || $_SESSION['isplastic'] == true)
