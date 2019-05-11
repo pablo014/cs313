@@ -38,5 +38,9 @@
 	   $total = $plastic + $metal + $double;
 	   echo "Total: $".$total;
     ?>
+    <h2>Being Sent To</h2>
+    <?php
+    echo $_POST[address];
+    ?>
   </body>
 </html>
