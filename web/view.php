@@ -10,10 +10,10 @@
       <?php 
 	 if(isset($_GET[plastic]) || isset($_SESSION['plastic']))
 	 {
-            echo "<input type=checkbox value=40 id=plastic name=plastic onclick=plastic() checked>"."Single Basket (Plastic): $
+            echo "<input type=checkbox value=40 id=plastic name=plastic onclick=plastic() checked>"."Single Basket (Plastic): $";
 	    if(isset($_GET[plastic]))
 	    {
-		echo "$_GET[plastic]";
+		echo $_GET[plastic]."<br>";
 	    }
 	    else
 	    {
