@@ -6,6 +6,9 @@
   </head>
   <body>
     <h1>Check Out</h1>
-    <?php echo $_SESSION['total'];?>
+    <?php
+     $total = $_SESSION['total'] + 40;
+     echo $total;
+    ?>
   </body>
 </html>
