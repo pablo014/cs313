@@ -22,7 +22,7 @@
 	 
 	 echo "Total: "."$_GET[total]";
 	 $_SESSION[total] = $GET[total];
-	 echo $_SESSION[total];
+	 echo $_SESSION['total'];
 	 ?>
       <br><br>
       <button type="submit">Return</button><br><br>
