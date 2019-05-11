@@ -5,12 +5,6 @@
     <title>View Cart</title>
   </head>
   <body>
-    <?php
-     $_SESSION['total'] = $_GET[total];
-     $total = $_SESSION['total'] + 40;
-     echo $total;
-    ?>
-
     <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]))
@@ -27,6 +21,7 @@
 	 }
 	 
 	 echo "Total: "."$_GET[total]";
+	 echo $_SESSION[total];
 	 ?>
       <br><br>
       <button type="submit">Return</button><br><br>
