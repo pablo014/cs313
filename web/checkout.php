@@ -8,6 +8,10 @@
     <form action="confirm.php" method="post">
       Address:<br>
       <textarea name="address" rows="4" cols="50"></textarea>
+      <br><br>
+      <button type="submit">Purchase</button>
     </form>
+    <br><br>
+    <a href="checkout.php"><input type="button" value="Return To Cart"></a>
   </body>
 </html>
