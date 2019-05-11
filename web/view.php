@@ -8,9 +8,18 @@
   <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
     <form action="browse2.php" method="post">
       <?php 
-	 if(isset($_GET[plastic]))
+	 if(isset($_GET[plastic]) || isset($_SESSION['plastic']))
 	 {
-         echo "<input type=checkbox value=40 id=plastic name=plastic onclick=plastic() checked>"."Single Basket (Plastic): $"."$_GET[plastic]"."<br>"; 
+            echo "<input type=checkbox value=40 id=plastic name=plastic onclick=plastic() checked>"."Single Basket (Plastic): $
+	    if(isset($_GET[plastic]))
+	    {
+		echo "$_GET[plastic]";
+	    }
+	    else
+	    {
+		echo $_SESSION['plastic'];
+	    }
+	    echo "<br>";
 	 }
 	 if(isset($_GET[metal]))
 	 {
