@@ -16,6 +16,7 @@
   </head>
   <body>
     <?php echo "Hello ".$GLOBALS['total']; ?>
+    <form action="confirm.php" method="get">
     <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]))
@@ -35,6 +36,8 @@
 	 ?>
       <br><br>
       <button type="submit">Return</button><br><br>
+    </form>
+    <button type="submit">Check Out</button><br>
     </form>
     <a href="confirm.php"><input type="button" value="Check Out"></a>
   </body>
