@@ -7,7 +7,7 @@
   <body>
     <h1>Check Out</h1>
     <?php
-     $total = $_SESSION['total'] + 40;
+     $total = $_SESSION['total'];
      echo $total;
     ?>
   </body>
