@@ -1,14 +1,9 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Check Out</title>
+    <title>Confirmation</title>
   </head>
   <body>
-    <h1>Check Out</h1>
-    <?php
-     $total = $_SESSION['total'];
-     echo $total;
-    ?>
+    <h1>Confirmation</h1>
   </body>
 </html>
