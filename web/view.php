@@ -35,6 +35,9 @@
 	 {
 	 $double = 0;	
 	 }	 
+	 $_SESSION['plastic'] = $plastic;
+	 $_SESSION['metal'] = $metal;
+	 $_SESSION['double'] = $double;
 	 $total = $plastic + $metal + $double;
 	 echo "Total: $".$total;
 	 ?>
