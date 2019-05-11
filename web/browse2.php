@@ -170,5 +170,6 @@
         <button type="submit">View Cart</button><br><br>
 	<a href="confirm.php"><input type="button" value="Check Out"></a>
     </form>
+    <?php echo $_SESSION['total']; ?>
   </body>
 </html>
