@@ -1,5 +1,6 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<htlm>
+<html>
   <head>
     <title>Check Out</title>
   </head>

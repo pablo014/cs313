@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,7 +11,6 @@
     </script>
   </head>
   <body>
-    <?php echo "Hello ".$_SESSION['total']; ?>
     <form action="browse2.php" method="post">
       <?php 
 	 if(isset($_GET[plastic]))
