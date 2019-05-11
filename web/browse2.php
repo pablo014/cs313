@@ -170,6 +170,6 @@
         <button type="submit">View Cart</button><br><br>
 	<a href="confirm.php"><input type="button" value="Check Out"></a>
     </form>
-    <?php echo $_SESSION['total']; ?>
+    <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
   </body>
 </html>
