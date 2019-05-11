@@ -12,6 +12,6 @@
       <button type="submit">Purchase</button>
     </form>
     <br><br>
-    <a href="checkout.php"><input type="button" value="Return To Cart"></a>
+    <a href="view.php"><input type="button" value="Return To Cart"></a>
   </body>
 </html>
