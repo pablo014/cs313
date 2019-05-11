@@ -12,60 +12,36 @@
       var total = <?php
          if(isset($_POST[plastic]))
          {
-         echo "$_POST[plastic]";
 	 $plastic = $_POST[plastic];
          $_SESSION['plastic'] = $_POST[plastic];
-	    if(isset($_POST[metal]) || isset($_POST[double]))
-            {
-            echo " + ";
-            }
-            else
-            {
-            echo " + 0";
-            }
-         }
-         else
-         {
+	 }
+	 else
+	 {
 	 $plastic = 0;
-         $_SESSION['plastic'] = 0;
-         echo "0 + ";
-         }
+	 $_SESSION['plastic'] = 0;
+	 }
          if(isset($_POST[metal]))
          {
          $_SESSION['metal'] = $_POST[metal];
 	 $metal = $_POST[metal];
-         echo "$_POST[metal]";
-	    if(isset($_POST[double]))
-	    {
-	    echo " + ";
-	    }
-            else
-            {
-            echo "+ 0";
-            }
          }
          else {
 	    $metal = 0;
             $_SESSION['metal'] = 0;
-            echo "0";
-            if(isset($_POST[double]))
-            {
-            echo " + ";
-            }
 	 }
          if(isset($_POST[double]))
          {
          $double = $_POST[double];
-         echo "$_POST[double]";
+	 $_SESSION['double'] = $double;
          }
          else {
 	 $double = 0;
          $_SESSION['double'] = 0;
          echo "0";
          }
-         $_SESSION['total'] = $_SESSION['plastic'] + $_SESSION_['metal'] + $_SESSION['double'];
 	 $total = $double + $metal + $plastic;
-	 echo "+ $total";
+	 echo "$total";
+	 $_SESSION = $total;
          ?>;
 
       
