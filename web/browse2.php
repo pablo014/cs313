@@ -50,7 +50,7 @@
             plastic = true;
             total = total + 40;
             <?php
-	       $_SESSION['total'] = $SESSION['total'] + 40;
+	       $_SESSION['total'] = $_SESSION['total'] + 40;
 	       $_SESSION['isplastic'] = true;
 	       ?>
          }
@@ -59,7 +59,7 @@
             plastic = false;
             total = total - 40;
 	    <?php
-	       $_SESSION['total'] = $total - 40;
+	       $_SESSION['total'] = $_SESSION['total'] - 40;
 	       $_SESSION['isplastic'] = false;
                ?>
          }
