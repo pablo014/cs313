@@ -6,6 +6,7 @@
   </head>
   <body>
     <?php
+     $_SESSION['total'] = $_GET[total];
      $total = $_SESSION['total'] + 40;
      echo $total;
     ?>
