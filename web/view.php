@@ -8,7 +8,7 @@
   <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
     <form action="browse2.php" method="post">
       <?php 
-	 if(isset($_GET[plastic]) || isset($_SESSION['plastic']))
+	 if(isset($_GET[plastic]) || $_SESSION['isplastic'])
 	 {
             echo "<input type=checkbox value=40 id=plastic name=plastic onclick=plastic() checked>"."Single Basket (Plastic): $40<br>";
 	    $plastic = 40;
@@ -17,7 +17,7 @@
 	 {
 	    $plastic = 0;
 	 }
-	 if(isset($_GET[metal]) || isset($_SESSION['metal']))
+	 if(isset($_GET[metal]) || $_SESSION['ismetal'])
 	 {
          echo "<input type=checkbox value=60 id=metal name=metal checked>"."Single Basket (Metal): $60<br>";
 	 $metal = 60;
@@ -26,7 +26,7 @@
 	 {
 	 $metal = 0;
 	 }
-	 if(isset($_GET[double]) || isset($_SESSION['double']))
+	 if(isset($_GET[double]) || $_SESSION['isdouble'])
 	 {
          echo "<input type=checkbox value=50 id=double name=double checked>"."Double Basket: $50<br>";
 	 $double = 50;
