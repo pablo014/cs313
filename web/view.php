@@ -6,7 +6,7 @@
     <title>View Cart</title>
     <script>
       function plastic() {
-      <?php
+
 
       }
       
