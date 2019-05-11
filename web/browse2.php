@@ -123,13 +123,14 @@
             total = total - 50;
 	    <?php
                $_SESSION['total'] = $_SESSION['total'] - 50;
-               $_SESSIOM['isdouble'] = false;
+               $_SESSION['isdouble'] = false;
                ?>
          }
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
 
       function load() {
+        <?php echo "alert($_SESSION['total'])"; ?>
         if (plastic == true)
         {
            document.getElementById("plastic").innerHTML = "<input type=checkbox name=plastic value=40 onclick=changePlastic() checked>";
