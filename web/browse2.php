@@ -82,10 +82,6 @@
 	       $_SESSION['isplastic'] = false;
                ?>
          }
-	 <?php
-         $total = $_SESSION['total'];
-         echo "alert($total)";
-               ?>
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
 
@@ -108,10 +104,6 @@
                $_SESSION['ismetal'] = false;
                ?>
          }
-	 <?php 
-	 $total = $_SESSION['total'];
-	 echo "alert($total)";
-	       ?>
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
       
@@ -134,10 +126,6 @@
                $_SESSION['isdouble'] = false;
                ?>
          }
-	 <?php
-         $total = $_SESSION['total'];
-         echo "alert($total)";
-               ?>
          document.getElementById("total").innerHTML = "<input type=textbox name=total value=$" + total + ".00 readonly>"
       }
 
