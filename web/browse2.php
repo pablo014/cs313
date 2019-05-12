@@ -167,8 +167,7 @@
 	</tr>
       </table>
       <br><br>
-        <button type="submit">View Cart</button><br><br>
-	<a href="checkout.php"><input type="button" value="Check Out"></a>
+        <button type="submit">View Cart</button><br>
     </form>
     <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
   </body>
