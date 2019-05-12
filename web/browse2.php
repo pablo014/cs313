@@ -169,6 +169,5 @@
       <br><br>
         <button type="submit">View Cart</button><br>
     </form>
-    <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
   </body>
 </html>

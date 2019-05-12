@@ -5,7 +5,6 @@
     <title>Confirmation</title>
   </head>
   <body>
-    <?php echo $_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
     <h1>Congratulations On Your Purchase Of</h1>
     <?php  
     	   if($_SESSION['plastic'] != 0)

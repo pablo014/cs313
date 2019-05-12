@@ -6,7 +6,6 @@
   </head>
   <body>
     <h1>Check Out</h1>
-    <?php echo $_SESSION['total']." ".$_SESSION['plastic']." ".$_SESSION['metal']." ".$_SESSION['double']; ?>
     <form action="confirm.php" method="post">
       Address:<br>
       <textarea name="address" rows="4" cols="50"></textarea>
