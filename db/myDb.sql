@@ -1,0 +1,21 @@
+CREATE TABLE room (
+roomId int PRIMARY KEY,
+roomNum int
+);
+
+CREATE TABLE student (
+studentId serial PRIMARY KEY,
+name varchar(50) NOT NULL,
+job varchar(100) NOT NULL,
+pass boolean,
+room int REFERENCES room(roomId)
+);
+
+INSERT INTO room
+(roomId) VALUES (1101);
+
+INSERT INTO room
+(roomId) VALUES	(3103);
+
+INSERT INTO student
+(name, job, pass, room) VALUES ('Angelo', 'Kitchen', TRUE, 3103);
