@@ -4,12 +4,12 @@
 <head>
 	<title>List Of Apartments</title>
 	<script>
-	<?php echo '
 	function setSession(x)
-	{'.
-	$_SESSIOM["test"].' = "test"'.
-	$_SESSION["roomNumber"].' = x; 
-	}'; ?>
+	{
+	<?php echo
+	$_SESSION["test"].' = "test"'.
+	$_SESSION["roomNumber"].' = x'; ?> 
+	}
 	</script>
 </head>
 <body>
