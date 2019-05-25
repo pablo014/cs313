@@ -1,17 +1,17 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
+<?php session_start(); 
+echo "<!DOCTYPE html>
 <html>
 <head>
 	<title>List Of Apartments</title>
 	<script>
 	function setSession(x)
 	{
-	<?php $_SESSION["roomNumber"] = x ?>
-	alert(x);
+	$_SESSION[\"roomNumber\"] = x;
+	alert($_SESSION[\"roomNumber\"]);
 	}
 	</script>
-</head>
-
+</head>";
+?>
 <?php
 try
 {
