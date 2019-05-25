@@ -24,7 +24,7 @@ catch (PDOException $ex)
 $rooms;
 foreach($db->query('SELECT * FROM room') as $row)
 {
-  echo 'Room '.$row['roomNum'].'<br>';
+  echo 'Room '.$row['roomnum'].'<br>';
 }
 ?>
 <h1>17</h1>
