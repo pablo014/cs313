@@ -37,7 +37,14 @@ catch (PDOException $ex)
 $rooms;
 foreach($db->query('SELECT * FROM room') as $row)
 {
-  echo '<a href=display.php onclick=setSession('.$row['roomnum'].')>Room '.$row['roomnum'].'</a><br><br>';
+  echo '<a href=display.php onclick=setSession('.$row['roomnum'].')>Room '.$row['roomnum'].'</a><br>';
+  foreach($db->query('SELECT * FROM student) as $info)
+  {
+  if($info['room'] == $row['roomnum'])
+  {
+  echo $info['name']." ".$info['job']." ".$info['pass']." ".$info['comment']
+  }
+  }
 }
 ?>
 <h1>17</h1>
