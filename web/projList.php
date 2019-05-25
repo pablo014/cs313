@@ -9,7 +9,7 @@ try
   $dbHost = $dbOpts["host"];
   $dbPort = $dbOpts["port"];
   $dbUser = "pab18001@byui.edu";
-  $dbPassword = "Pablo044";
+  $dbPassword = "Pablo044*";
   $dbName = ltrim($dbOpts["path"],'/');
 
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbname", $dbUser, $dbPassword);
