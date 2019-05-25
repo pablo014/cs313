@@ -7,7 +7,7 @@
 	function setSession(x)
 	{
 	<?php $_SESSION["roomNumber"] = x ?>
-	alert($_SESSION["roomNumber"]);
+	alert(x);
 	}
 	</script>
 </head>
