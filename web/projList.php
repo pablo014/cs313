@@ -2,7 +2,7 @@
 session_start();
 try
 {
-  $dbUrl = getenv('DATABASE_URL');
+  $dbUrl = getenv('mydb');
 
   $dbOpts = parse_url($dbUrl);
 
