@@ -8,9 +8,9 @@
 
  try
 {
-  $user = 'pablo014';
+  $user = 'angelopablo';
   $password = 'pablo014';
-  $db = new PDO('pgsql:host=localhost;dbname=prove05', $user, $password);
+  $db = new PDO('pgsql:host=localhost;port=5432;dbname=prove05', $user, $password);
 
   // this line makes PDO give us an exception when there are problems,
   // and can be very helpful in debugging! (But you would likely want
