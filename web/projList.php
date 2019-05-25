@@ -11,6 +11,7 @@
 	}
 	</script>
 </head>
+<body>
 <?php
 try
 {
@@ -40,4 +41,5 @@ foreach($db->query('SELECT * FROM room') as $row)
 }
 ?>
 <h1>17</h1>
+</body>
 </html>
