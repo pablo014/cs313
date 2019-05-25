@@ -7,6 +7,7 @@
 	<?php echo '
 	function setSession(x)
 	{'.
+	$_SESSIOM["test"].' = "test"'.
 	$_SESSION["roomNumber"].' = x; 
 	}'; ?>
 	</script>
