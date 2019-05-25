@@ -21,5 +21,8 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
+$rooms;
+$statement = $db->query('SELECT * FROM student');
+
 ?>
 <h1>17</h1>
