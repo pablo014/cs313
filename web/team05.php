@@ -8,7 +8,7 @@
 
  try
 {
-  $user = 'pablo014';
+  $user = 'angelopablo';
   $db = new PDO('pgsql:host=localhost;dbname=prove05', $user);
 
   // this line makes PDO give us an exception when there are problems,
