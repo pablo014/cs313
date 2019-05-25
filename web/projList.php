@@ -12,6 +12,7 @@
 	</script>
 </head>
 <body>
+<?php $_SESSION["test"] = "test"; ?>
 <?php
 try
 {
