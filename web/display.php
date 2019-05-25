@@ -1,3 +1,5 @@
-<?php session_start(); 
+<?php session_start(); ?>
+
+<?php
    echo $_SESSION["roomNum"];
 ?>
