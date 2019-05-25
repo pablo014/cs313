@@ -47,7 +47,7 @@ foreach($db->query('SELECT * FROM room') as $row)
   $check = "Passed";
   }
 
-  echo '<a href=display.php onclick=setSession('.$row['roomnum'].')>Room '.$row['roomnum']." ".$check.'</a><br>';
+  echo '<a href=display.php onclick=setSession('.$row['roomnum'].')>Room '.$row['roomnum'].'</a>'." ".$check.'<br>';
   foreach($db->query('SELECT * FROM student') as $info)
   {
   if($info['room'] == $row['roomnum'])
