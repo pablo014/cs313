@@ -4,11 +4,11 @@
 <head>
 	<title>List Of Apartments</title>
 	<script>
+	<?php echo '
 	function setSession(x)
-	{
-	<?php $_SESSION["test"] = "test"; ?>
-	<?php $_SESSION["roomNumber"] = x; ?>
-	}
+	{'.
+	$_SESSION["roomNumber"].' = x; 
+	}'; ?>
 	</script>
 </head>
 <body>
