@@ -12,7 +12,7 @@ try
   $dbPassword = $dbOpts["pass"];
   $dbName = ltrim($dbOpts["path"],'/');
 
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=mydb", $dbUser, $dbPassword);
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbname", $dbUser, $dbPassword);
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
@@ -22,7 +22,7 @@ catch (PDOException $ex)
   die();
 }
 $rooms;
-$statement = $db->query('SELECT * FROM student');
-
+$statement = $db->query('SELECT * FROM room');
+$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <h1>17</h1>
