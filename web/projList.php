@@ -1,5 +1,17 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Of Apartments</title>
+	<script>
+	function setSession(x)
+	{
+	<?php $_SESSION["roomNumber"] = x ?>
+	}
+	</script>
+</head>
+
 <?php
-session_start();
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -24,7 +36,8 @@ catch (PDOException $ex)
 $rooms;
 foreach($db->query('SELECT * FROM room') as $row)
 {
-  echo '<a href=display.php>Room '.$row['roomnum'].'</a><br><br>';
+  echo '<a href=display.php onclick=setSession('.$row['roomnum'].')>Room '.$row['roomnum'].'</a><br><br>';
 }
 ?>
 <h1>17</h1>
+</html>
