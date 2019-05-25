@@ -22,8 +22,9 @@ catch (PDOException $ex)
   die();
 }
 $rooms;
-$statement = $db->query('SELECT * FROM room');
-$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-echo $results;
+foreach($db->query('SELECT * FROM room') as $row)
+{
+  echo 'Room '.$row['roomNum'].'<br>';
+}
 ?>
 <h1>17</h1>
