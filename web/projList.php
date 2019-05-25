@@ -8,7 +8,6 @@
 	{
 	<?php $_SESSION["test"] = "test"; ?>
 	<?php $_SESSION["roomNumber"] = x; ?>
-	alert(<?php echo $_SESSION["roomNumber"]; ?>);
 	}
 	</script>
 </head>
