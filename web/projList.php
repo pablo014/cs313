@@ -8,8 +8,8 @@ try
 
   $dbHost = $dbOpts["host"];
   $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
+  $dbUser = "pab18001@byui.edu";
+  $dbPassword = "Pablo044";
   $dbName = ltrim($dbOpts["path"],'/');
 
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbname", $dbUser, $dbPassword);
