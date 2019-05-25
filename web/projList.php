@@ -6,13 +6,13 @@
 	<script>
 	function setSession(x)
 	{
+	<?php $_SESSION["test"] = "test"; ?>
 	<?php $_SESSION["roomNumber"] = x; ?>
 	alert(<?php echo $_SESSION["roomNumber"]; ?>);
 	}
 	</script>
 </head>
 <body>
-<?php $_SESSION["test"] = "test"; ?>
 <?php
 try
 {
