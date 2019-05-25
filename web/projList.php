@@ -42,7 +42,7 @@ foreach($db->query('SELECT * FROM room') as $row)
   {
   if($info['room'] == $row['roomnum'])
   {
-  echo $info['name']." ".$info['job']." ".$info['pass']." ".$info['comment'];
+  echo $info['name']." ".$info['job']." ".$info['pass']." ".$info['comment']."<br>";
   }
   }
 }
