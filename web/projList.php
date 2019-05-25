@@ -6,9 +6,7 @@
 	<script>
 	function setSession(x)
 	{
-	<?php echo
-	$_SESSION["test"].' = "test"'.
-	$_SESSION["roomNumber"].' = x'; ?> 
+	<?php $_SESSION["roomNumber"] = x; ?> 
 	}
 	</script>
 </head>
