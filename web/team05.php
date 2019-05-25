@@ -8,8 +8,8 @@
 
  try
 {
-  $user = 'pablo014';
-  $password = 'pablo014';
+  $user = 'angelopablo';
+  $password = 'Pablo044';
   $db = new PDO('pgsql:host=localhost;port=5432;dbname=prove05', $user, $password);
 
   // this line makes PDO give us an exception when there are problems,
