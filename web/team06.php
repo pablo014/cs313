@@ -28,7 +28,7 @@ $checkboxes .= "<label>".$row['topic']."</label><input type='checkbox' name='top
 
 ?>
 
-<form method="GET" action="team06a.php">
+<form method="GET" action="/team06a.php">
 <label>Book</label><br>
 <input name="book" type="text">
 <br><br>
