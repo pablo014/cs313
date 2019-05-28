@@ -23,12 +23,12 @@ catch (PDOException $ex)
 
 foreach($db->query('SELECT * FROM Topic') as $row)
 {
-$checkboxes .= "<label>".$row['topic']."</label><input type='checkbox' name='topic' value='".$row['id']."'><br>";
+$checkboxes .= "<label>".$row['topic']."</label><input type='checkbox' name='topic[]' value='".$row['id']."'><br>";
 }
 
 ?>
 
-<form method="POST">
+<form method="GET" action="team06a.php">
 <label>Book</label><br>
 <input name="book" type="text">
 <br><br>
@@ -43,5 +43,6 @@ $checkboxes .= "<label>".$row['topic']."</label><input type='checkbox' name='top
 <br><br>
 <?php 
 echo $checkboxes;
-?>
+?><br>
+<button type="submit">Submit</button>
 </form>
