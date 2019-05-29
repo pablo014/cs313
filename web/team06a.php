@@ -21,10 +21,10 @@ try
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ('$book', $chap, $vs, '$content')";
   $db->query($sql);
-  var_dump($sql);
-  die();
  
 $newId = $pdo->lastInsertId('Scripture_id_seq');
+var_dump($sql);
+  die();
 
 foreach($_POST["topic"] as $topic)
 {
