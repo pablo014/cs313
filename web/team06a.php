@@ -12,9 +12,13 @@ try
   $dbName = ltrim($dbOpts["path"],'/');
 
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+  $book = $_POST['book'];
+  $chap = $_POST['chapter'];
+  $vs = $_POST['verse'];
+  $content = $_POST['content'];
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ($_POST['book'], $_POST['chapter'], $_POST['verse'], $_POST['content'])";
+  $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ($book, $chap, $vs, $content)";
   var_dump($sql);
   die();
   $db->query($sql);
