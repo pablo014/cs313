@@ -22,7 +22,8 @@ try
   $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ('$book', $chap, $vs, '$content')";
   $db->query($sql);
 
-  $newId = $pdo->lastInsertId('scripture_id_seq');
+  
+  $newId = $db->lastInsertId('scripture_id_seq');
   var_dump($sql);
   die();
 
