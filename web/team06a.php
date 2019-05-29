@@ -25,10 +25,15 @@ try
   
   $newId = $db->lastInsertId('scripture_id_seq');
 
+  $info = "";
 foreach($_POST["topic"] as $topic)
 {
 $db->query("INSERT INTO connect(topicId, scriptureId) VALUES ($topic, $newId)");
+$info .= $db->query("SELECT $topic FROM Scripture")."<br>";
 }
+
+echo $info;
+
 }
 catch (PDOException $ex)
 {
