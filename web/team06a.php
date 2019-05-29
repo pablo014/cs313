@@ -18,7 +18,7 @@ try
   $content = $_POST['content'];
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ($book, $chap, $vs, $content)";
+  $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ('$book', $chap, $vs, '$content')";
 
   $db->query($sql);
 
