@@ -15,6 +15,8 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ($_POST['book'], $_POST['chapter'], $_POST['verse'], $_POST['content'])";
+  var_dump($sql);
+  die();
   $db->query($sql);
 
 $newId = $pdo->lastInsertId('Scripture_id_seq');
