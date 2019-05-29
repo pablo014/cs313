@@ -24,8 +24,6 @@ try
 
   
   $newId = $db->lastInsertId('scripture_id_seq');
-  var_dump($sql);
-  die();
 
 foreach($_POST["topic"] as $topic)
 {
