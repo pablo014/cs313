@@ -21,9 +21,9 @@ try
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO Scripture(book, chapter, verse, content) VALUES ('$book', $chap, $vs, '$content')";
   $db->query($sql);
- 
-$newId = $pdo->lastInsertId('scripture_id_seq');
-var_dump($sql);
+
+  $newId = $pdo->lastInsertId('scripture_id_seq');
+  var_dump($sql);
   die();
 
 foreach($_POST["topic"] as $topic)
