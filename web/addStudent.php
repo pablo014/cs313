@@ -37,14 +37,12 @@
       <div><a href="projList.php">Switch Apartment</a></div>
       <div><a href="">Grade Apartment</a></div>
       <div class="selected"><a href="addStudent.php">Add Student</a></div>
-      <div><a href="">Remove Student</a></div>
+      <div><a href="removeStudent.php">Remove Student</a></div>
    </div>
    
    <form action="addStudent1.php" method="GET">
-      First Name: <br>
+      Student Name: <br>
       <input type="text" name="fname" required><br>
-      Last Name: <br>
-      <input type="text" name="lname" required><br><br>
       <button type="submit">Add Student</button>
    </form>
 </body>

@@ -21,7 +21,7 @@
       <div><a href="projList.php">Switch Apartment</a></div>
       <div><a href="">Grade Apartment</a></div>
       <div><a href="addStudent.php">Add Student</a></div>
-      <div><a href="">Remove Student</a></div>
+      <div><a href="removeStudent.php">Remove Student</a></div>
   </div>
   <h2>Students</h2>
   <?php
