@@ -30,5 +30,5 @@
         {
            echo "ERROR Unable to add ".$name;
         }
-	echo "<br><a href="display.php">Return to Home</a>";
 ?>
+<br><a href="display.php">Return to Home</a>
