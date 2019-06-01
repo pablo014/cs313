@@ -22,7 +22,7 @@
    }      
    foreach($_GET["student"] as $student)
    {
-      echo $student;
+      $db->query('DELETE FROM Student WHERE name = '.$student);
    }
 ?>
 <br><a href="display.php">Return to Home</a>
