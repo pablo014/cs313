@@ -30,7 +30,7 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
         }
-	if(isset($_POST["fname"]) || isset($_POST["lname"]))
+	if(isset($_GET["fname"]) || isset($_GET["lname"]))
 	{
 	   alert("Inside if statement");
 	   $db->query("INSERT INTO Student(name, room) VALUE ('".$_POST['fname']." ".$_POST['lname']."', ".$_SESSION['roomNumber'].")");
@@ -45,7 +45,7 @@
       <div><a href="">Remove Student</a></div>
    </div>
    
-   <form action="addStudent.php" method="post">
+   <form action="addStudent.php" method="GET">
       First Name: <br>
       <input type="text" name="fname"><br>
       Last Name: <br>
