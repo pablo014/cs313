@@ -32,7 +32,7 @@
         }
 	if(isset($_POST["fname"]) || isset($_POST["lname"]))
 	{
-	   $db->query('INSERT INTO Student(name, room) VALUE ($_POST["fname"] $_POST["lname"], $_SESSION["roomNumber"])');
+	   $db->query("INSERT INTO Student(name, room) VALUE ('".$_POST['fname']." ".$_POST['lname']."', ".$_SESSION['roomNumber'].")");
 	}
 
 ?>
