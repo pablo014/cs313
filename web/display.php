@@ -1,6 +1,9 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="proj.css">
+</head>
 <body>
 <?php
    $_SESSION["roomNumber"] = $_GET["rooms"];
