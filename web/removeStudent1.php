@@ -20,6 +20,9 @@
    echo 'Error!: ' . $ex->getMessage();
    die();
    }      
-   echo $_GET["student"][0];
+   foreach($_GET["student"] as $selected)
+   {
+   echo $selected." ";
+   }
 ?>
 <br><a href="display.php">Return to Home</a>
