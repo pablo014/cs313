@@ -34,7 +34,6 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-}
 ?>
 	<form action="display.php" method="GET">
 	<select name="rooms">
