@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="proj.css">
 </head>
 <body>
 <?php
