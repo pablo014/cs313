@@ -30,8 +30,9 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
         }
-	if($_POST["fname"] == "" || $_POST["lname"] == "")
+	if(isset($_POST["fname"]) || isset($_POST["lname"]))
 	{
+	   $db->query('INSERT INTO Student(name) VALUE $_POST["fname"] $_POST["lname"]');
 	}
 
 ?>
