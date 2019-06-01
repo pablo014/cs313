@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="proj.css">
 	<title>List Of Apartments</title>
 	<script>
 	function setSession(x)
