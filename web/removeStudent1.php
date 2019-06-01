@@ -20,7 +20,7 @@
    echo 'Error!: ' . $ex->getMessage();
    die();
    }      
-   $list = $_GET['student[]'];
+   $list = $_GET['student'];
    foreach ($list as $students)
    {
    echo $students." ";
