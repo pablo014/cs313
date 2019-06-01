@@ -48,7 +48,7 @@
    </form>
    <script>
      function add(){
-     var name = document.getElementById("fname") + document.getElementById("lname")
+     var name = document.getElementById("fname") + document.getElementById("lname");
      <?php
         $name = name;
 	alert($name);
