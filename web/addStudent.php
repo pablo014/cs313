@@ -30,6 +30,10 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
         }
+	if($_POST["fname"] == "" || $_POST["lname"] == "")
+	{
+	}
+
 ?>
    <div class="nav">
       <div><a href="display.php">Home</a></div>
@@ -39,22 +43,12 @@
       <div><a href="">Remove Student</a></div>
    </div>
    
-   <form action="addStudent.php">
+   <form action="addStudent.php" method="post">
       First Name: <br>
-      <input type="text" id="fname"><br>
+      <input type="text" name="fname"><br>
       Last Name: <br>
-      <input type="text" id="lname"><br><br>
-      <button type="submit" onclick="add()">Add Student</button>
+      <input type="text" name="lname"><br><br>
+      <button type="submit">Add Student</button>
    </form>
-   <script>
-     function add(){
-     var name = document.getElementById("fname") + document.getElementById("lname");
-     <?php
-        $name = name;
-	alert($name);
-        $db->query('INSERT INTO Student(name) VALUES $name');
-     ?>
-     }
-  </script>
 </body>
 </html>

@@ -6,8 +6,15 @@
 </head>
 <body>
 <?php
+   if($_GET["rooms"] = "")
+   {
+   echo "<h1>Room ".$_SESSION["roomNumber"]."</h1>";
+   }
+   else
+   {
    $_SESSION["roomNumber"] = $_GET["rooms"];
    echo "<h1>Room ".$_GET["rooms"]."</h1>";
+   }
 ?>
   <div class="nav">
       <div class="selected"><a href="display.php">Home</a></div>
