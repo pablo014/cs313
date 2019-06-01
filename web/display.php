@@ -13,7 +13,7 @@
       <div class="selected"><a href="display.php">Home</a></div>
       <div><a href="projList.php">Switch Apartment</a></div>
       <div><a href="">Grade Apartment</a></div>
-      <div><a href="">Add Student</a></div>
+      <div><a href="addStudent.php">Add Student</a></div>
       <div><a href="">Remove Student</a></div>
   </div>
   <h2>Students</h2>
