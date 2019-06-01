@@ -22,7 +22,7 @@
    }      
    foreach($_GET["student[]"] as $selected)
    {
-   echo $selected." ";
+   echo "<p>".$selected." </p>";
    }
 ?>
 <br><a href="display.php">Return to Home</a>
