@@ -3,7 +3,7 @@
 <html>
 <body>
 <?php
-   echo "<h1>Room ".$_SESSION["roomNumber"].$_SESSION["test"]."</h1>";
+   echo "<h1>Room ".$_GET["rooms"]."</h1>";
 ?>
 </body>
 </html>
