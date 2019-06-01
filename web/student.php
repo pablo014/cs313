@@ -59,9 +59,25 @@
       <option value="Kitchen Counter">Kitchen Counter</option>
       <option value="Fridge">Fridge</option>
       <option value="Stovetop">Stovetop</option>
-   </select>
+   </select><br>
    <button type="submit">Submit</button>
    </form>
-   
+   <?php
+   foreach($db->query('SELECT * FROM Student') as $row)
+     {
+        if($row['room'] == $_SESSION["roomNumber"])
+        {
+           echo $row['name']." ";
+	   if(isset($row['job']))
+	   {
+	      echo $row['job']."<br>";
+	   }
+	   else
+	   {
+	      echo "Unassigned<br>";
+	   }
+        }
+     }
+   ?>
    </body>
 </html>
