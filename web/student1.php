@@ -31,6 +31,6 @@
    }
    else
    {
-      echo "Error Unable to Update Job List"
+      echo "Error Unable to Update Job List";
    }
 ?>
