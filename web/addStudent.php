@@ -33,7 +33,7 @@
 	if(isset($_GET["fname"]) || isset($_GET["lname"]))
 	{
 	   alert("Inside if statement");
-	   $db->query("INSERT INTO Student(name, room) VALUE ('".$_POST['fname']." ".$_POST['lname']."', ".$_SESSION['roomNumber'].")");
+	   $db->query("INSERT INTO Student(name, room) VALUE ('".$_GET['fname']." ".$_GET['lname']."', ".$_SESSION['roomNumber'].")");
 	}
 
 ?>
