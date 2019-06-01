@@ -24,5 +24,7 @@
    {
       $db->query("DELETE FROM Student WHERE name='".$student."'");
    }
+   
 ?>
+<p>Successfully Removed Students</p>
 <br><a href="display.php">Return to Home</a>
