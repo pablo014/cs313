@@ -20,6 +20,9 @@
    echo 'Error!: ' . $ex->getMessage();
    die();
    }      
-   echo $_GET["student[]"]."cool<br>";   
+   foreach($_GET["student[]"] as $student)
+   {
+   echo $student."cool <br>";
+   }   
 ?>
 <br><a href="display.php">Return to Home</a>
