@@ -1,5 +1,5 @@
 <?php session_start();
-        $name = $_GET["fname"] . " " . $_GET["lname"];
+        $name = $_GET["fname"];
 	try
      	{
         $dbUrl = getenv('DATABASE_URL');
@@ -21,5 +21,13 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
      	}
-	echo $name;
+	$sql = "INSERT INTO Student (name, room) VALUES ($name, ".$_SESSION['roomNumber'].")";
+        if($db->query($sql) == true)
+        {
+           echo "Successfully Added ".$name;
+        }
+        else
+        {
+           echo "ERROR Unable to add ".$name;
+        }
 ?>
