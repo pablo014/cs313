@@ -21,7 +21,7 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
      	}
-	$sql = "INSERT INTO Student (name, room) VALUES ($name, ".$_SESSION['roomNumber'].")";
+	$sql = "INSERT INTO Student (name, room) VALUES ('$name', ".$_SESSION['roomNumber'].")";
         if($db->query($sql) == true)
         {
            echo "Successfully Added ".$name;
