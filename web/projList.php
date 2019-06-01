@@ -4,13 +4,6 @@
 <head>
 	<link rel="stylesheet" href="proj.css">
 	<title>List Of Apartments</title>
-	<script>
-	function setSession(x)
-	{
-	<?php $_SESSION["roomNumber"] = x; ?>
-	alert(<?php echo $_SESSION["roomNumber"]; ?>);
-	}
-	</script>
 </head>
 <body>
 <?php

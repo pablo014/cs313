@@ -42,7 +42,7 @@
    
    <form action="removeStudent1.php" method="GET">
    <?php
-   foreach ($db->query(SELECT * FROM Student) as $row)
+   foreach ($db->query('SELECT * FROM Student') as $row)
    {
       if($row["room"] == $_SESSION["roomNumber"])
       { 
