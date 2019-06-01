@@ -34,29 +34,28 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-$rooms;
-foreach($db->query('SELECT * FROM room') as $row)
-{
-  $check;
-  if($row['recheck'] == true)
-  {
-  $check = "Recheck";
-  }
-  else
-  {
-  $check = "Passed";
-  }
-
-  echo '<a href=display.php onclick=setSession('.$row['roomnum'].')>Room '.$row['roomnum'].'</a>'." ".$check.'<br>';
-  foreach($db->query('SELECT * FROM student') as $info)
-  {
-  if($info['room'] == $row['roomnum'])
-  {
-  echo $info['name']." ".$info['job']." ".$info['pass']." ".$info['comment']."<br>";
-  }
-  }
 }
 ?>
-<h1>17</h1>
+	<form action="display.php" method="GET">
+	<select name="rooms">
+	<?php 
+	foreach($db->query('SELECT * FROM room') as $row)
+	{
+	$check;
+  	if($row['recheck'] == true)
+  	{
+  	$check = "Recheck";
+  	}
+  	else
+  	{	
+  	$check = "Passed";
+  	}
+
+  	echo "<option value='$row['roomnum']>$row['roomnum']</option>";
+	}
+	?>
+	</select>
+	<button type="submit">Enter</button>
+	</form>
 </body>
 </html>
