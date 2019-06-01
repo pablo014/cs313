@@ -30,11 +30,6 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
         }
-	if(isset($_GET["fname"]) || isset($_GET["lname"]))
-	{
-	   alert("Inside if statement");
-	   $db->query("INSERT INTO Student(name, room) VALUE ('".$_GET['fname']." ".$_GET['lname']."', ".$_SESSION['roomNumber'].")");
-	}
 
 ?>
    <div class="nav">
@@ -45,11 +40,11 @@
       <div><a href="">Remove Student</a></div>
    </div>
    
-   <form action="addStudent.php" method="GET">
+   <form action="addStudent1.php" method="GET">
       First Name: <br>
-      <input type="text" name="fname"><br>
+      <input type="text" name="fname" required><br>
       Last Name: <br>
-      <input type="text" name="lname"><br><br>
+      <input type="text" name="lname" required><br><br>
       <button type="submit">Add Student</button>
    </form>
 </body>
