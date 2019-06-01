@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-   if($_GET["rooms"] = "")
+   if(!isset($_GET["rooms"]))
    {
    echo "<h1>Room ".$_SESSION["roomNumber"]."</h1>";
    }
