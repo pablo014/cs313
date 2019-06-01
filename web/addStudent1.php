@@ -21,5 +21,5 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
      	}
-	echo name;
+	echo $name;
 ?>
