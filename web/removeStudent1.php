@@ -21,7 +21,6 @@
    die();
    }      
 
-   echo $_GET["student[0]"];
    
 ?>
 <br><a href="display.php">Return to Home</a>
