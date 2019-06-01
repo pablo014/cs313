@@ -42,7 +42,7 @@
    <form action="student1.php" method="GET">
    <select name="student">
    <?php
-   foreach($db->query(SELECT * FROM Student) as $student)
+   foreach($db->query('SELECT * FROM Student') as $student)
    {
    echo "<option value=".$student['name'].">".$student['name']."</option>";
    }
