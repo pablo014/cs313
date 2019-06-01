@@ -48,7 +48,7 @@
      }
      foreach($db->query('SELECT * FROM Student') as $row)
      {
-	if($row['room'] == $_GET["rooms"])
+	if($row['room'] == $_SESSION["rooms"])
 	{
 	   echo $row['name']." ".$row['job']."<br>";
 	}
