@@ -52,7 +52,7 @@
      <?php
         $name = name;
 	alert($name);
-        $db->query('INSERT INTO Student(name) VALUES $name')
+        $db->query('INSERT INTO Student(name) VALUES $name');
      ?>
      }
   </script>
