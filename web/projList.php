@@ -50,7 +50,7 @@ catch (PDOException $ex)
   	$check = "Passed";
   	}
 
-  	echo "<option value='$row['roomnum']>$row['roomnum']</option>";
+  	echo "<option value=".$row['roomnum'].">".$row['roomnum']."</option>";
 	}
 	?>
 	</select>
