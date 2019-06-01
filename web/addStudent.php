@@ -51,6 +51,7 @@
      var name = document.getElementById("fname") + document.getElementById("lname")
      <?php
         $name = name;
+	alert($name);
         $db->query('INSERT INTO Student(name) VALUES $name')
      ?>
      }
