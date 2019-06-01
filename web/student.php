@@ -63,7 +63,7 @@
    <button type="submit">Submit</button>
    </form>
    <?php
-   foreach($db->query('SELECT * FROM Student') as $row)
+     foreach($db->query('SELECT * FROM Student') as $row)
      {
         if($row['room'] == $_SESSION["roomNumber"])
         {
