@@ -19,19 +19,14 @@
    catch (PDOException $ex)
    {
    echo 'Error!: ' . $ex->getMessage();
-   die();    
-   }
+   die();
+   }   
 ?>
-
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="proj.css">
-</head>
-<body>
-   <?php
-   echo "<h1>Room ".$_SESSION["roomNumber"]."</h1>";
-?>
+   <head>
+   </head>
+   <body>
    <div class="nav">
       <div><a href="display.php">Home</a></div>
       <div><a href="projList.php">Switch Apartment</a></div>
@@ -40,18 +35,5 @@
       <div><a href="removeStudent.php">Remove Student</a></div>
       <div><a href="student.php">Student View</a></div>
    </div>
-   
-   <form action="removeStudent1.php" method="GET">
-   <?php
-   foreach ($db->query('SELECT * FROM Student') as $row)
-   {
-      if($row["room"] == $_SESSION["roomNumber"])
-      { 
-       echo "<input type='checkbox' value='".$row["name"]."' name='student[]'>".$row["name"]." <br>";
-      }
-   }
-   ?>
-   <button type="submit">Remove</button>
-   </form>
-</body>
+   </body>
 </html>

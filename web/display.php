@@ -17,11 +17,12 @@
    }
 ?>
   <div class="nav">
-      <div class="selected"><a href="display.php">Home</a></div>
+      <div><a href="display.php">Home</a></div>
       <div><a href="projList.php">Switch Apartment</a></div>
-      <div><a href="">Grade Apartment</a></div>
-      <div><a href="addStudent.php">Add Student</a></div>
+      <div><a href="grade.php">Grade Apartment</a></div>
+      <div class="selected"><a href="addStudent.php">Add Student</a></div>
       <div><a href="removeStudent.php">Remove Student</a></div>
+      <div><a href="student.php">Student View</a></div>
   </div>
   <h2>Students</h2>
   <?php
