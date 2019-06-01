@@ -35,6 +35,8 @@ catch (PDOException $ex)
   die();
 }
 ?>
+	<h1>Room Selection</p>
+	<p>Which room would you like to see?</p>
 	<form action="display.php" method="GET">
 	<select name="rooms">
 	<?php 
@@ -54,6 +56,7 @@ catch (PDOException $ex)
 	}
 	?>
 	</select>
+	<br><br>
 	<button type="submit">Enter</button>
 	</form>
 </body>
