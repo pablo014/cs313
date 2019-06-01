@@ -32,6 +32,7 @@
         }
 	if(isset($_POST["fname"]) || isset($_POST["lname"]))
 	{
+	   alert("Inside if statement");
 	   $db->query("INSERT INTO Student(name, room) VALUE ('".$_POST['fname']." ".$_POST['lname']."', ".$_SESSION['roomNumber'].")");
 	}
 
