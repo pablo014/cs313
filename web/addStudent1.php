@@ -21,13 +21,5 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
      	}
-	$sql = "INSERT INTO Student (name, room) VALUES ($name, ".$_SESSION['roomNumber'].")";
-	if($db->query($sql) == true)
-	{
-	   echo "Successfully Added ".$name;
-	}
-	else
-	{
-	   echo "ERROR Unable to add ".$name;
-	}
+	echo name;
 ?>
