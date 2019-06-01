@@ -30,4 +30,6 @@
         {
            echo "ERROR Unable to add ".$name;
         }
+	<br>
+	<a href="display.php">Return to Home</a>
 ?>
