@@ -24,6 +24,8 @@
    
    $name = $_GET["name"];
    $job = $_GET["job"];
+   
+   echo $job;
 
    $db->query("UPDATE Student SET job = '".$job."' WHERE name = '".$name."'");   
 ?>
