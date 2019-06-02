@@ -44,8 +44,8 @@
          $i = 1;
          foreach($db->query('SELECT * FROM Student') as $row)
 	 {
-	    echo "<input type=checkbox name=pass>".$row['name']." ".$row['job']." <input type=text name=".$i.">"
-	    i++;
+	    echo "<input type=checkbox name=pass>".$row['name']." ".$row['job']." <input type=text name=".$i.">";
+	    $i = $i + 1;
 	 }
 	 $_SESSION['iterations'] = i;
       ?>
