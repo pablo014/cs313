@@ -46,8 +46,10 @@
          foreach($db->query('SELECT * FROM Student') as $row)
 	 {
 	    if ($row["room"] == $_SESSION["roomNumber"])
-	    echo "<input type=checkbox name=pass>".$row['name']." ".$row['job']." <input type=text name=".$i."><br><br>";
+	    {
+	    echo "<input type=checkbox name=pass value=".$row['name']."> ".$row['name']." ".$row['job']." <input type=text name=".$i."><br><br>";
 	    $i = $i + 1;
+	    }
 	 }
 	 $_SESSION['iterations'] = i;
       ?>
