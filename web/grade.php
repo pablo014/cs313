@@ -28,6 +28,9 @@
    <link rel="stylesheet" href="proj.css">
    </head>
    <body>
+   <?php 
+   echo "<h1>Room ".$_SESSION["roomNumber"]."</h1>";
+   ?>
    <div class="nav">
       <div><a href="display.php">Home</a></div>
       <div><a href="projList.php">Switch Apartment</a></div>
