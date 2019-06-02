@@ -40,12 +40,13 @@
       <div><a href="student.php">Student View</a></div>
    </div>
    <form action="grade1.php" method="GET">
+      <p>P/F  Name    	      Comments</p>
       <?php 
          $i = 1;
          foreach($db->query('SELECT * FROM Student') as $row)
 	 {
 	    if ($row["room"] == $_SESSION["roomNumber"])
-	    echo "<input type=checkbox name=pass>".$row['name']." ".$row['job']." <input type=text name=".$i."><br>";
+	    echo "<input type=checkbox name=pass>".$row['name']." ".$row['job']." <input type=text name=".$i."><br><br>";
 	    $i = $i + 1;
 	 }
 	 $_SESSION['iterations'] = i;
