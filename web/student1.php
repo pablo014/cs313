@@ -35,3 +35,5 @@
       echo "Error Unable to Update Database";
    }
 ?>
+
+<br><a href="display.php">Back To Home</a>
