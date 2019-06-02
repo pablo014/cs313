@@ -39,5 +39,17 @@
       <div><a href="removeStudent.php">Remove Student</a></div>
       <div><a href="student.php">Student View</a></div>
    </div>
+   <form action="grade1.php" method="GET">
+      <?php 
+         $i = 1;
+         foreach($db->query('SELECT * FROM Student') as $row)
+	 {
+	    echo "<input type=checkbox name=pass>".$row['name']." ".$row['job']." <input type=text name=".$i.">"
+	    i++;
+	 }
+	 $_SESSION['iterations'] = i;
+      ?>
+      <button type="submit">Send Grades</button>
+   </form>
    </body>
 </html>
