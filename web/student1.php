@@ -22,7 +22,7 @@
    die();
    }
    
-   $name = $_GET["name"];
+   $name = $_GET['name'];
    $job = $_GET["job"];
    
    $sql = "UPDATE Student SET job='".$job."' WHERE name='".$name."'";
