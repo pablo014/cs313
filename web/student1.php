@@ -24,13 +24,6 @@
    
    $name = $_GET["name"];
    $job = $_GET["job"];
-   
-   if($db->query("UPDATE Student SET job = '$job' WHERE name = '$name'"))
-   {
-      echo "Successfully Updated Job List";
-   }
-   else
-   {
-      echo "Error Unable to Update Job List";
-   }
+
+   $db->query("UPDATE Student SET job = '$job' WHERE name = '$name'");   
 ?>
