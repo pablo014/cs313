@@ -46,7 +46,7 @@
    foreach($db->query('SELECT * FROM Student') as $student)
    {
    if($student['room'] == $_SESSION["roomNumber"]){
-   echo "<option value=".$student['name'].">".$student['name']."</option>";
+   echo "<option value='".$student['name']."'>".$student['name']."</option>";
    }
    }
    ?>
