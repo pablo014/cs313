@@ -22,12 +22,14 @@
    die();
    }
    
-   $sql = "UPDATE Student SET comment='".$comment."', pass='".$pass."' WHERE name='".$name."'";
    foreach($db->query('SELECT * FROM Student') as $row)
    {
       if($row["room"] == $_SESSION["roomNumber"])
       {
          echo $row["name"]." ".$row["job"]." ".$_GET[$row["name"]];
+	 $name = $row["name"];
+	 $comment = $_GET[$row["name"]];
+	 $db->query("UPDATE Student SET comment = '$comment' WHERE name = '$name'");
       }
    }
 ?>
