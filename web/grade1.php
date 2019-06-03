@@ -22,13 +22,33 @@
    die();
    }
    
+   $array;
+   $i = 0;
+   foreach($_GET["pass"] as $grade)
+   {
+      $array[$i] = $grade;
+   }
+   $i = 0;
+   
    foreach($db->query('SELECT * FROM Student') as $row)
    {
       if($row["room"] == $_SESSION["roomNumber"])
       {
-         echo $row["name"]." ".$row["job"]." ".$_GET[$row["name"]]."<br>";
+         echo $row["name"]." ".$row["job"]." ".$_GET[$row["name"]]." ".$_GET["pass"]."<br>";
 	 $name = $row["name"];
 	 $comment = $_GET[$row["name"]];
+
+	 if ($array[$i] == $name)
+	 {
+	    $db->query("UPDATE Student SET pass = true WHERE name = '$name'");
+	    echo true;
+	 }
+	 else
+	 {
+	    $db->query("UPDATE Student SET pass = false WHERE name = '$name'");
+	    echo false;
+	 }
+
 	 $sql = "UPDATE Student SET comment = '$comment' WHERE name = '$name'";
 	 $db->query($sql);
       }
