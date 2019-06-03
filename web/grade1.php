@@ -49,15 +49,8 @@
 	 }
 
 	 $sql = "UPDATE Student SET comment = '$comment' WHERE name = '$name'";
-	 if($db->query($sql))
-	 {
-	    echo "Grading Comlete";
-	 }
-	 else
-	 {
-	    echo "Error Unable to Grade";
-	 }
-	 
+	 $db->query($sql);
       }
    }
+   echo "Grading Comlete";
 ?>
