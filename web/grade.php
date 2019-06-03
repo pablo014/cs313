@@ -46,7 +46,7 @@
 	 {
 	    if ($row["room"] == $_SESSION["roomNumber"])
 	    {
-	    echo "<input type=checkbox name=pass[] value=".$row['name']."> ".$row['name']." ".$row['job']." <input type=text name=".$row['name']."><br><br>";
+	    echo "<input type=checkbox name=pass[] value='".$row['name']."'> ".$row['name']." ".$row['job']." <input type=text name='".$row['name']."'><br><br>";
 	    }
 	 }
       ?>
