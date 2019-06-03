@@ -30,7 +30,6 @@
 	 $name = $row["name"];
 	 $comment = $_GET[$row["name"]];
 	 $sql = "UPDATE Student SET comment = '$comment' WHERE name = '$name'";
-	 echo $sql."<br>";
 	 $db->query($sql);
       }
    }
