@@ -48,6 +48,7 @@
 	    $db->query("UPDATE Student SET pass = false WHERE name = '$name'");
 	    echo $array[$i];
 	 }
+	 $i = $i + 1;
 
 	 $sql = "UPDATE Student SET comment = '$comment' WHERE name = '$name'";
 	 $db->query($sql);
