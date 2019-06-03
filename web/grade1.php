@@ -23,12 +23,11 @@
    }
    
    $sql = "UPDATE Student SET comment='".$comment."', pass='".$pass."' WHERE name='".$name."'";
-   $i = 0;
    foreach($db->query('SELECT * FROM Student') as $row)
    {
       if($row["room"] == $_SESSION["roomNumber"])
       {
-         echo $row["name"]." ".$row["job"]." ".$_GET["comment[i]"];
+         echo $row["name"]." ".$row["job"]." ".$_GET[$row["name"]];
       }
    }
 ?>
