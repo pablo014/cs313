@@ -41,17 +41,14 @@
    </div>
    <form action="grade1.php" method="GET">
       <p>P/F  Name    	      Comments</p>
-      <?php 
-         $i = 1;
+      <?php
          foreach($db->query('SELECT * FROM Student') as $row)
 	 {
 	    if ($row["room"] == $_SESSION["roomNumber"])
 	    {
-	    echo "<input type=checkbox name=pass value=".$row['name']."> ".$row['name']." ".$row['job']." <input type=text name=".$i."><br><br>";
-	    $i = $i + 1;
+	    echo "<input type=checkbox name=pass value=".$row['name']."> ".$row['name']." ".$row['job']." <input type=text name=comment[]><br><br>";
 	    }
 	 }
-	 $_SESSION['iterations'] = i;
       ?>
       <button type="submit">Send Grades</button>
    </form>
