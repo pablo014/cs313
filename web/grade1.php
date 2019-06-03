@@ -26,10 +26,12 @@
    {
       if($row["room"] == $_SESSION["roomNumber"])
       {
-         echo $row["name"]." ".$row["job"]." ".$_GET[$row["name"]];
+         echo $row["name"]." ".$row["job"]." ".$_GET[$row["name"]]."<br>";
 	 $name = $row["name"];
 	 $comment = $_GET[$row["name"]];
-	 $db->query("UPDATE Student SET comment = '$comment' WHERE name = '$name'");
+	 $sql = "UPDATE Student SET comment = '$comment' WHERE name = '$name'";
+	 echo $sql."<br>";
+	 $db->query($sql);
       }
    }
 ?>
