@@ -44,7 +44,7 @@
    <form action="addStudent1.php" method="GET">
       First Name: <br>
       <input type="text" name="fname" required><br>
-      First Name: <br>
+      Last Name: <br>
       <input type="text" name="lname" required><br>
       <button type="submit">Add Student</button>
    </form>
