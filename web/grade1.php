@@ -35,24 +35,29 @@
    {
       if($row["room"] == $_SESSION["roomNumber"])
       {
-         echo $row["name"]." ".$row["job"]." ".$_GET[$row["name"]]." ".$_GET["pass"]."<br>";
 	 $name = $row["name"];
 	 $comment = $_GET[$row["name"]];
 
 	 if ($array[$i] == $name)
 	 {
 	    $db->query("UPDATE Student SET pass = true WHERE name = '$name'");
-	    echo $array[$i];
 	    $i = $i + 1;
 	 }
 	 else
 	 {
 	    $db->query("UPDATE Student SET pass = false WHERE name = '$name'");
-	    echo $array[$i];
 	 }
 
 	 $sql = "UPDATE Student SET comment = '$comment' WHERE name = '$name'";
-	 $db->query($sql);
+	 if($db->query($sql))
+	 {
+	    echo "Grading Comlete";
+	 }
+	 else
+	 {
+	    echo "Error Unable to Grade";
+	 }
+	 
       }
    }
 ?>
