@@ -54,3 +54,4 @@
    }
    echo "Grading Comlete";
 ?>
+<br><a href="display.php">Back To Home</a>
