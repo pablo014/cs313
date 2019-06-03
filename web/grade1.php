@@ -41,12 +41,12 @@
 	 if ($array[$i] == $name)
 	 {
 	    $db->query("UPDATE Student SET pass = true WHERE name = '$name'");
-	    echo true;
+	    echo $array[$i];
 	 }
 	 else
 	 {
 	    $db->query("UPDATE Student SET pass = false WHERE name = '$name'");
-	    echo false;
+	    echo $array[$i];
 	 }
 
 	 $sql = "UPDATE Student SET comment = '$comment' WHERE name = '$name'";
