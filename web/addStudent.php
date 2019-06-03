@@ -42,8 +42,10 @@
    </div>
    
    <form action="addStudent1.php" method="GET">
-      Student Name: <br>
+      First Name: <br>
       <input type="text" name="fname" required><br>
+      First Name: <br>
+      <input type="text" name="lname" required><br>
       <button type="submit">Add Student</button>
    </form>
 </body>

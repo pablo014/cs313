@@ -1,5 +1,5 @@
 <?php session_start();
-        $name = $_GET["fname"];
+        $name = $_GET["fname"]." ".$_GET["lname"];
 	try
      	{
         $dbUrl = getenv('DATABASE_URL');

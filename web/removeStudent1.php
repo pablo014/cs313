@@ -20,11 +20,13 @@
    echo 'Error!: ' . $ex->getMessage();
    die();
    }      
+
+   $room = $_SESSION["roomNumber"];
+
    foreach($_GET["student"] as $student)
    {
-      $db->query("DELETE FROM Student WHERE name='".$student."'");
+      $db->query("DELETE FROM Student WHERE name='".$student."' AND room = $room");
    }
-   
 ?>
 <p>Successfully Removed Students</p>
 <br><a href="display.php">Return to Home</a>
