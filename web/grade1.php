@@ -27,6 +27,7 @@
    foreach($_GET["pass"] as $grade)
    {
       $array[$i] = $grade;
+      $i = $i + 1;
    }
    $i = 0;
    
