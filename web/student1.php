@@ -22,7 +22,14 @@
    die();
    }
    
-   $name = $_GET["student"];
+   if (!isset($_GET["student"]))
+   {
+      $name = $_SESSION["name"];
+   }
+   else
+   {
+      $name = $_GET["student"];
+   }
    $job = $_GET["job"];
 
    

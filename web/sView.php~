@@ -30,15 +30,30 @@
    {
       if($row['user'] == $user)
       {
-         if(password_verify($row['pass'], $pass))
+         if(!password_verify($row['pass'], $pass))
 	 {
-	    $_SESSION['name'] = $row['name'];
-	    header('Location: job.php');
+	    header('Location: login.php');
+	    exit;
 	 }
 	 else
 	 {
-	    header('Location: login.php');
+	    $name = $row['name'];
+	    $_SESSION['name'] = $name;
 	 }
       }
    }
 ?>
+
+<h1>Welcome <?php echo $name; ?></h1>
+<h2>Which job would you like to do?</h2>
+<form action="student1.php" method="GET">
+   <select name="job">
+      <option value="Bathroom 1">Bathroom 1</option>
+      <option value="Bathroom 2">Bathroom 2</option>
+      <option value="Laundry Room">Laundry Room</option>
+      <option value="Kitchen Counter">Kitchen Counter</option>
+      <option value="Fridge">Fridge</option>
+      <option value="Stovetop">Stovetop</option>
+   </select><br>
+   <button type="submit">Submit</button>
+</form>
