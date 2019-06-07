@@ -93,7 +93,7 @@
       </table>
       <br><br>
         <button type="submit">View Cart</button><br><br>
-        <input type="button" value="Check Out" onclick="checkout.php">
+        <input type="button" value="Check Out" onclick="confirm.php">
     </form>
   </body>
 </html>
