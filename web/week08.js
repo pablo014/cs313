@@ -12,7 +12,7 @@ var url = require("url");
     }
     //Show error page
     else {
-	window.location.href = "noPage.html";
+	window.location.pathname = "https://blooming-sierra-50448.herokuapp.com/noPage.html";
     }
 }
 
