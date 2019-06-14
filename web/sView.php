@@ -39,6 +39,10 @@
 	 {
 	    $name = $row['name'];
 	    $_SESSION["name"] = $name;
+	    if($row['admin'] == true)
+	    {
+	       header('Location: projList.php');
+	    }
 	 }
       }
    }

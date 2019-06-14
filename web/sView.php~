@@ -38,7 +38,7 @@
 	 else
 	 {
 	    $name = $row['name'];
-	    $_SESSION['name'] = $name;
+	    $_SESSION["name"] = $name;
 	 }
       }
    }
