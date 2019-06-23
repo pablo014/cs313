@@ -9,11 +9,19 @@ var url = require("url");
     }
     //Get JSON data
     else if(myUrl.pathname == '/getData') {
+	var myJSON = '{"name":"Angelo Pablo", "class":"cs313"}';
+	var obj = JSON.parse(myJSON);
+	res.write("name: " + obj.name + "<br>class: " + obj.class);
+    }
+    //add page
+    else if(myUrl.pathname == '/add') {
+	
     }
     //Show error page
     else {
-	window.location.pathname = "https://blooming-sierra-50448.herokuapp.com/noPage.html";
+	res.writeHead(302, {'Location': 'https://blooming-sierra-50448.herokuapp.com/noPage.html'});
     }
+    res.end();
 }
 
 var server = http.createServer(onRequest);
