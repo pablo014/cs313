@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Title Page</title>
+    <link rel="stylesheet" href="team1.css">
+  </head>
+  <body>
+    <h1>Team Project 1</h1><br><br>
+
+    <div id="1">
+      <p>This is a random piece of text that will go bold when you hover over it</p>
+    </div>
+    <br>
+    <script>
+      function change() {
+      var color;
+      color = "background-color:" + document.getElementById("color").value;
+        document.getElementById("1").innerHTML = "<div style=" + color + "><p>This is a random piece of text that will go bold when you hover over it</p></div>";
+      }
+    </script>
+    <input type="text" id="color">
+    <button type="button" onclick="change()">Change Color</button>
+    <br><br>
+
+    <div id="2">
+      <p>This is a random piece of text that will go bold when you hover over it</p>
+    </div><br><br>
+
+    <div id="3">
+      <p>This is a random piece of text that will go bold when you hover over it</p>
+    </div><br><br>
+
+    <script>
+      function clicked() {
+      alert("Clicked!");
+      }
+    </script>
+    <button type="button" onclick="clicked()">Click Me</button>
+  </body>
+</html>

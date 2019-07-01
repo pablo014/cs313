@@ -1,0 +1,32 @@
+body {
+     color: white;
+     background-color: black;
+}
+footer {
+       background-image: linear-gradient(dodgerblue, grey);
+       color: black;
+}
+
+.nav {
+     background-image: linear-gradient(dodgerblue, grey);
+     display: flex;
+     flex-wrap: nowrap;
+}
+
+.nav > div {
+     width: 100px;
+     text-align: center;
+     margin: 10px;
+}
+
+.head {
+      display: flex;
+      font-size: 50px;
+      font-weight: bold;
+}
+
+.body {
+      width: 50%;
+      text-align: center;
+      margin: auto;
+}
